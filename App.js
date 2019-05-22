@@ -6,10 +6,10 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-22 00:49:06 
- * Last modified  : 2019-05-22 21:33:45
+ * Last modified  : 2019-05-23 01:03:11
  */
 import {NavBar} from 'components';
-import MaterializeCSS from './components/materialize-jsx';
+import {TagStyle, StyleMain} from 'css/global';
 
 console.log( process.env );
 
@@ -22,8 +22,9 @@ const links = [
 const App = ( Page ) => {
 	return () => (
 		<main>
-			<MaterializeCSS />
-			<NavBar navLinks={links} />
+			<MainStyles />
+			<TagStyle
+				<NavBar navLinks={links} />
 			<Page />
 		</main>
 	)

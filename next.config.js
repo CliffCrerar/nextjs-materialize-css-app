@@ -5,8 +5,13 @@ const withSASS = require( '@zeit/next-sass' );
 const nextEnv = require( 'next-env' );
 const dotenvLoad = require( 'dotenv-load' );
 const path = require( 'path' );
+const os = require( 'os' );
 
-process.env.NODE_PATH = process.cwd();
+const proot = process.cwd();
+const delimiter = os.platform() === 'win32' ? ';' : ':';
+const nodePath = `${proot}${delimiter}${proot}/lib`;
+console.log( "NODE_PATH:".nodePath );
+process.env.NODE_PATH = nodePath;
 
 //console.log( process );
 
