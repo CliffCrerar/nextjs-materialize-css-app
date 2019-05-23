@@ -9,12 +9,11 @@
  */
 
 import Link from 'next/link'
-import router from 'next/router'
+
 
 const navStyle = {
 	margin: 5
 }
-console.log( 'Router: ', router );
 
 const EnumLinks = ( props ) => {
 	//console.log( props );

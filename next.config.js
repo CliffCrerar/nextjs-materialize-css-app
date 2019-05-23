@@ -6,14 +6,16 @@ const nextEnv = require( 'next-env' );
 const dotenvLoad = require( 'dotenv-load' );
 const path = require( 'path' );
 const os = require( 'os' );
+const {Loaders} = require( './config' );
 
 const proot = process.cwd();
 const delimiter = os.platform() === 'win32' ? ';' : ':';
 const nodePath = `${proot}${delimiter}${proot}/lib`;
-console.log( "NODE_PATH:".nodePath );
+//console.log( "NODE_PATH:".nodePath );
 process.env.NODE_PATH = nodePath;
 
 //console.log( process );
+
 
 
 // Initialize environment
@@ -29,31 +31,37 @@ const nextConfigBuild = {}
 
 const nextConfigDev = {}
 
-const nextConfigCommon = {
-	// serverside config
-	//webpack: ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {
-	//config.plugins.push( new webpack.IgnorePlugin(//__tests__//));
-	//config.module.rules.push( {test: /\.(png|jpe?g|gif)$/, use: [ {loader: 'file-loader', options: {}, }, ], } )
-	//isServer = false;
-	//	config.module.rules.push( {test: /\.css$/, use: [ 'style-loader', 'css-loader' ], } );
-	// config.module.rules.push( {
-	// 	test: /\.(scss|css|sass)$/, use: [
-	// 		"style-loader", // creates style nodes from JS strings
-	// 		"css-loader", // translates CSS into CommonJS
-	// 		"sass-loader" // compiles Sass to CSS, using Node Sass by default
-	// 	]
-	// } );
-	//return config;
 
-}
+
+const nextConfigCommon = withCSS( withSASS( {
+	// serverside config
+	webpack: ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {
+		//config.plugins.push( new webpack.IgnorePlugin(//__tests__//));
+		//config.module.rules.push( {test: /\.(png|jpe?g|gif)$/, use: [ {loader: 'file-loader', options: {}, }, ], } )
+		//isServer = false;
+		// config.module.rules.push( {test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/i, use: [ {loader: 'url-loader', options: {limit: 8192}} ]} );
+		// config.module.rules.push( {test: /\.css$/, use: [ 'style-loader', 'css-loader' ], } );
+		// config.module.rules.push( {
+		// 	test: /\.(scss|css|sass)$/, use: [
+		// 		"style-loader", // creates style nodes from JS strings
+		// 		"css-loader", // translates CSS into CommonJS
+		// 		"sass-loader" // compiles Sass to CSS, using Node Sass by default
+		//]
+		//} );
+		console.log( 'Loaders: ', Loaders );
+		Loaders( config );
+		return config;
+	}
+} ) );
 
 module.exports = withPlugins(
 	// Plugins
 	[
 		withCSS,
-		withSASS,
-		withNextEnv
+		withSASS( {cssModule: true} ),
+		withNextEnv,
+		nextConfigCommon
 	],
 	// Next config
-	//nextConfigCommon
+	nextConfigCommon
 )

@@ -9,11 +9,9 @@
  */
 
 import App from 'App'
-import {PageHead} from 'components';
 
 const Page = () => (
 	<div>
-		<PageHead PageTitle="About" />
 		<h1>About</h1>
 	</div>
 )

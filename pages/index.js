@@ -9,14 +9,10 @@
  */
 
 import App from 'App';
-// @ts-ignore
-import {PageHead} from 'components';
-const Page = () =>
-	(
-		<div>
-			<PageHead PageTitle="Landing" />
-			<h1>Index</h1>
-		</div>
-	)
+const Page = () => (
+	<div>
+		<h1>Index</h1>
+	</div>
+)
 
 export default App( Page );

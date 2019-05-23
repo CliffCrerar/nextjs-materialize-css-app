@@ -39,6 +39,9 @@
 		"eslint-config-xo-nextjs": "^1.4.0",
 		"eslint-plugin-react": "^7.13.0",
 		"eslint-plugin-react-hooks": "^1.6.0",
+		"sass-loader": "^7.1.0",
+		"style-loader": "^0.23.1",
+		"url-loader": "^1.1.2",
 		"webpack": "^4.32.1"
 	}
 }

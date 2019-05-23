@@ -8,10 +8,11 @@
  * Created at     : 2019-05-22 00:49:06 
  * Last modified  : 2019-05-23 01:03:11
  */
-import {NavBar} from 'components';
-import {TagStyle, StyleMain} from 'css/global';
+import {NavBar, PageHead} from 'components';
+import {StyledTags, StyledMain} from 'global';
 
-console.log( process.env );
+//console.log( process.env );
+//import 'fonts/Lobster/stylesheet.css'
 
 const links = [
 	{href: '/', caption: "Home", title: 'Home Page'},
@@ -22,9 +23,10 @@ const links = [
 const App = ( Page ) => {
 	return () => (
 		<main>
-			<MainStyles />
-			<TagStyle
-				<NavBar navLinks={links} />
+			<StyledMain />
+			<StyledTags />
+			<PageHead title={`{{variable}}`} />
+			<NavBar navLinks={links} />
 			<Page />
 		</main>
 	)
