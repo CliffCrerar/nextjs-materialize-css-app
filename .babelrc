@@ -1,0 +1,47 @@
+{
+	"presets": [
+		[
+			"next/babel",
+			{
+				"preset-env": {},
+				"transform-runtime": {},
+				"styled-jsx": {
+					//"plugins": [
+					// "styled-jsx-plugin-sass",
+					// "styled-jsx-plugin-stylelint",
+					//]
+				},
+				"class-properties": {}
+			}
+		]
+	],
+	"plugins": []
+}
+/*
+{
+	"presets": [
+		[
+			"next/babel",
+			"react",
+			{
+				"preset-env": {},
+				"transform-runtime": {},
+				"styled-jsx": {
+					"plugins": [
+						"styled-jsx/babel",
+						"styled-jsx-plugin-sass",
+						"styled-jsx-plugin-stylelint",
+						"styled-jsx-plugin-stylelint"
+					]
+				},
+				"class-properties": {}
+			}
+		]
+	],
+	"plugins": [
+		"@babel/plugin-proposal-do-expressions",
+		"babel-plugin-transform-es2015-modules-commonjs",
+		"array-includes",
+		"styled-jsx/babel"
+	]
+}*/
