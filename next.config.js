@@ -1,12 +1,19 @@
-const withPlugins = require( 'next-compose-plugins' );
+const
+	ut = require( 'util' ),
+	withPlugins = require( 'next-compose-plugins' ),
 
-const withCSS = require( '@zeit/next-css' );
-const withSASS = require( '@zeit/next-sass' );
-const nextEnv = require( 'next-env' );
-const dotenvLoad = require( 'dotenv-load' );
-const withSourceMaps = require( '@zeit/next-source-maps' )()
-//const path = require( 'path' );
-const {Loaders, ProjectPaths} = require( './config' );
+	withCSS = require( '@zeit/next-css' ),
+	withSASS = require( '@zeit/next-sass' ),
+	withSourceMaps = require( '@zeit/next-source-maps' )(),
+
+	nextEnv = require( 'next-env' ),
+	dotenvLoad = require( 'dotenv-load' ),
+
+
+
+	{Loaders, ProjectPaths} = require( './config' ),
+
+	WebpackCleanPlugin = require( 'webpack-clean-plugin' );
 
 // Set node path for project
 process.env.NODE_PATH = ProjectPaths( process.cwd() );
@@ -26,6 +33,9 @@ const nextConfigCommon = withCSS( withSASS( {
 	// serverside config
 	webpack: async ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {
 		//config.plugins.push( new webpack.IgnorePlugin(//__tests__//));
+		ut.log( ' -> Running custom webpack config' )
+		await ProjectPaths( config );
+		console.log( 'ProjectPaths( config );: ', ProjectPaths( config ) );
 		await Loaders( config );
 		return config;
 	}
