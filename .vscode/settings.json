@@ -1,7 +1,0 @@
-{
-	"eslint.enable": true,
-	"javascript.validate.enable": false,
-	"cSpell.words": [
-		"proot"
-	]
-}
