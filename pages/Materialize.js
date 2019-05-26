@@ -13,10 +13,10 @@ import {MaterializeComponent} from 'components/boilerComponents';
 
 
 const PageComponent = () => (
-	<section className="container position-relative">
+	<main className="container position-relative">
 		<h1 className="w-100 text-center">Materialize CSS</h1>
 		<MaterializeComponent />
-	</section>
+	</main>
 )
 
 export default App( PageComponent );

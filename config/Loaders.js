@@ -33,8 +33,8 @@ module.exports = function ( {module} ) {
 		}
 
 	Loaders = [
-		{obj: Url_loader, type: 'ld', state: 1},
-		{obj: Css_loader, type: 'ld', state: 1},
+		{obj: Url_loader, type: 'ld', state: 0},
+		{obj: Css_loader, type: 'ld', state: 0},
 		{obj: Sass_loader, type: 'ld', state: 0},
 		{obj: Babel_loader, type: 'ld', state: 0},
 		{obj: JSX_CSS_loader, type: 'ld', state: 0},

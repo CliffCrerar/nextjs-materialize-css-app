@@ -12,10 +12,10 @@ import App from 'App';
 import {ReactComponent} from 'components/boilerComponents';
 
 const PageComponent = () => (
-	<section className="container position-relative">
+	<main className="container position-relative">
 		<h1 className="w-100 text-center">React</h1>
 		<ReactComponent />
-	</section>
+	</main>
 )
 
 export default App( PageComponent );

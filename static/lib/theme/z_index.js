@@ -5,5 +5,5 @@
  * Created at     : 2019-05-26 03:59:26
  * Last modified  : 2019-05-26 18:03:33
  */
-var buildTheme = require( './buildtheme' );
+var buildTheme = require( './z_buildtheme' );
 module.exports = buildTheme;

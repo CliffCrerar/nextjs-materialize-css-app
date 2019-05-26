@@ -2,7 +2,7 @@
  * GLOBAL CSS
  * @author Cliff Crerar
  * Created at     : 2019-05-23 00:05:19
- * Last modified  : 2019-05-23 23:47:03
+ * Last modified  : 2019-05-26 19:51:00
  */
 
 function StyledMain() {
@@ -11,6 +11,9 @@ function StyledMain() {
 		html{
 			font-family: Montserrat !important;
 			font-weight: normal;
+		}
+		html,body{
+			//min-height: var(--vph);
 		}
 		h1,h2,h3,h4,h5,h6{
 			font-family: Kodchasan !important;

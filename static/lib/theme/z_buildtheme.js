@@ -3,21 +3,26 @@
  * @summary Looks at CSS formatter files in ../colors and builds a theme file
  * @author Cliff Crerar
  * Created at     : 2019-05-26 03:59:26
- * Last modified  : 2019-05-26 18:20:50
+ * Last modified  : 2019-05-26 20:12:37
  */
 //var ch1 = require( 'css-to-json/cssjson' );
 const
 	ut = require( 'util' ),
 	CSSJSON = require( '../css-to-json' ),
 	fs = require( 'fs' ),
-	path = require( 'path' ),
-	relColorSchemeDir = '../colors',
-	getCWD = ( fName ) => path.join( __dirname, relColorSchemeDir, ( fName === undefined ? '' : fName ) ),
-	readFiles = fs.readdirSync( getCWD() ),
-	themesOBJ = {},
-	showLoops = false;
+	path = require( 'path' );
+
+// function export
 module.exports = () => {
 	ut.log( '|> BUILDING THEMES' );
+	// declare variables
+	const
+		themesOBJ = {},
+		showLoops = false,
+		relColorSchemeDir = 'static/css/colors',
+		getCWD = ( fName ) => path.join( relColorSchemeDir, ( fName === undefined ? '' : fName ) ),
+		readFiles = fs.readdirSync( getCWD() );
+	// Start procedure
 	showLoops && console.log( 'start loop 1' );
 	for ( let i = 0; i < readFiles.length; i++ ) {
 		if (

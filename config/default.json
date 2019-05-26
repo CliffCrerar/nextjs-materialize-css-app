@@ -1,0 +1,8 @@
+{
+    "universalConfigA": "UNIVERSAL_CONFIG_A",
+    "universalConfigB": "UNIVERSAL_CONFIG_B",
+    "server": {
+        "secretA": "SECRET_A",
+        "secretB": "SECRET_B"
+    }
+}
