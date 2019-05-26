@@ -9,14 +9,10 @@ const
 	nextEnv = require( 'next-env' ),
 	dotenvLoad = require( 'dotenv-load' ),
 
-
-
 	{Loaders, ProjectPaths} = require( './config' ),
 
-	WebpackCleanPlugin = require( 'webpack-clean-plugin' );
-
-// Set node path for project
-process.env.NODE_PATH = ProjectPaths( process.cwd() );
+	// Set node path for project
+	process.env.NODE_PATH = ProjectPaths( process.cwd() );
 
 // Initialize environment
 dotenvLoad();
@@ -33,10 +29,10 @@ const nextConfigCommon = withCSS( withSASS( {
 	// serverside config
 	webpack: async ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {
 		//config.plugins.push( new webpack.IgnorePlugin(//__tests__//));
-		ut.log( ' -> Running custom webpack config' )
-		await ProjectPaths( config );
-		console.log( 'ProjectPaths( config );: ', ProjectPaths( config ) );
-		await Loaders( config );
+		ut.log( ' -> Running custom webpack config' );
+		await Loaders( config ); // configure loaders
+		await Plugins( config ); // configure plugins
+		console.log( config );
 		return config;
 	}
 } ) );

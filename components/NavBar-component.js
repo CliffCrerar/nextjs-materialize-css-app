@@ -5,11 +5,12 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-22 01:18:10
- * Last modified  : 2019-05-24 00:09:32
+ * Last modified  : 2019-05-25 05:00:36
  */
 
 import Link from 'next/link'
 import {DataNavBar} from 'global/data'
+import css from 'styled-jsx/css'
 //console.log( 'DataNavBar: ', DataNavBar );
 
 //console.log( 'data: ', data );
@@ -40,10 +41,16 @@ const EnumLinks = ( props ) => {
 	)
 }
 
+const styles = {
+	navBar: {background: "var(--mcsscolor)"}
+};
+
+
+
 const NavBar = ( props ) => {
 	//console.log( 'props NAV: ', props );
 	return (
-		<nav>
+		<nav className="navBar" style={styles.navBar}>
 			<div className="navbar-links">
 				<EnumLinks links={props.navLinks} />
 			</div>

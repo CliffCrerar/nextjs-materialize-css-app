@@ -1,5 +1,6 @@
 const
 	Loaders = require( './Loaders' ),
-	ProjectPaths = require( './paths' );
+	ProjectPaths = require( './paths' ),
+	Plugins = require( './Plugins' );
 
-module.exports = {Loaders, ProjectPaths}
+module.exports = {Loaders, ProjectPaths, Plugins}

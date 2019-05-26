@@ -9,6 +9,7 @@
  */
 
 import App from 'App';
+console.log( 'App: ', App );
 import {HelloWorldComponent} from 'components/boilerComponents'
 import Router from 'next/router'
 
@@ -16,11 +17,10 @@ const pageTitle = 'Hello Next Boiler'
 
 
 const PageComponent = () => {
+
 	return (
 		<section className="container position-relative">
-
 			<h1 className="w-100 text-center">{pageTitle}</h1>
-
 			<HelloWorldComponent />
 		</section>
 	)

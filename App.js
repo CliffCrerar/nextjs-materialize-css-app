@@ -16,7 +16,8 @@ import Router from 'next/router';
 const links = [
 	{href: '/', caption: "Hello World", title: 'Next-Materialize-B4-App'},
 	{href: '/materialize', caption: "Materialize-CSS", title: 'Materialize CSS'},
-	{href: '/react', caption: "React", title: 'React'}
+	{href: '/react', caption: "React", title: 'React'},
+	{href: '/test', caption: "Test", title: 'Test'}
 ]
 
 const App = ( PageComponent ) => {
