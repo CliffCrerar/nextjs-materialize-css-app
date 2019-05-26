@@ -1,2 +1,5 @@
 node_modules
 .next
+.DS_store
+**/**/.DS_store
+**/.DS_store
