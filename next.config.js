@@ -9,7 +9,7 @@ const
 	nextEnv = require( 'next-env' ),
 	dotenvLoad = require( 'dotenv-load' ),
 
-	{Loaders, ProjectPaths} = require( './config' ),
+	{Loaders, ProjectPaths} = require( './config' );
 
 	// Set node path for project
 	process.env.NODE_PATH = ProjectPaths( process.cwd() );

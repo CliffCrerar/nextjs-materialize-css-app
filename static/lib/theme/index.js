@@ -6,4 +6,4 @@
  * Last modified  : 2019-05-26 18:03:33
  */
 var buildTheme = require( './buildtheme' );
-buildTheme();
+module.exports = buildTheme;
