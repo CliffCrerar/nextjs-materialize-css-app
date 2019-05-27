@@ -1,3 +1,4 @@
 import StyledMain from './StyledMain';
+import Links from './Links';
 
-export {StyledMain}
+export {StyledMain, Links}

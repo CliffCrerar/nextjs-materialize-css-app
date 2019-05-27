@@ -7,7 +7,8 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "next",
         "build": "next build",
-        "prod": "next start"
+        "prod": "next start",
+        "ownExt": "node ./global/utils/chownExt.js"
     },
     "repository": {
         "type": "git",
@@ -16,6 +17,7 @@
     "author": "Cliff Crerar",
     "license": "ISC",
     "dependencies": {
+        "@engineerapart/nextscript": "^1.0.2",
         "@zeit/next-css": "^1.0.1",
         "@zeit/next-sass": "^1.0.1",
         "@zeit/next-source-maps": "0.0.3",

@@ -1,8 +1,9 @@
 const
 	ut = require( 'util' ),
+	appConstants = require( 'next/constants' ),
 	withPlugins = require( 'next-compose-plugins' ),
 
-	withCSS = require( '@zeit/next-css' ),
+	//withCSS = require( '@zeit/next-css' ),
 	withSASS = require( '@zeit/next-sass' ),
 	withSourceMaps = require( '@zeit/next-source-maps' )(),
 
@@ -11,18 +12,16 @@ const
 
 	{Loaders, ProjectPaths} = require( './config' );
 
-	// Set node path for project
-	process.env.NODE_PATH = ProjectPaths( process.cwd() );
+// Set node path for project
+process.env.NODE_PATH = ProjectPaths( process.cwd() );
 
 // Initialize environment
 dotenvLoad();
-const withNextEnv = nextEnv( {
-	staticPrefix: 'STATIC_', // prefix for environment variables only available to server
-	publicPrefix: 'PUBLIC_',// prefix for environment variables only available to server and client
-	serverPrefix: 'SERVER_' // prefix for environment variables only available to server
-} );
-// Set custom env var
+//const withNextEnv =
 process.env.PUBLIC_APPMODE = process.env.NODE_ENV;
+// Set custom env var
+
+/*
 const nextConfigBuild = {} // for custom build configuration
 const nextConfigDev = {} // for custom dev configuration
 const nextConfigCommon = withCSS( withSASS( {
@@ -35,16 +34,31 @@ const nextConfigCommon = withCSS( withSASS( {
 		console.log( config );
 		return config;
 	}
-} ) );
+} ) );*/
+
+const NextConfig = ( phase, {defaultConfig} ) => {
+	console.log( 'phase: ', phase );
+
+	console.log( 'appConstants: ', appConstants );
+	console.log( 'appConstants: ', typeof appConstants );
+
+
+
+}
 
 module.exports = withPlugins(
 	// Plugins
 	[
-		withCSS( {cssModule: true} ),
+		//withCSS( {cssModule: true} ),
 		withSASS( {cssModule: true} ),
-		[ withNextEnv ],
+		nextEnv( {
+			staticPrefix: 'STATIC_', // prefix for environment variables only available to server
+			publicPrefix: 'PUBLIC_',// prefix for environment variables only available to server and client
+			serverPrefix: 'SERVER_' // prefix for environment variables only available to server
+		} ),
 		[ withSourceMaps ]
 	],
 	// Next config
-	nextConfigCommon
+	//nextConfigCommon
+	NextConfig
 )

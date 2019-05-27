@@ -5,21 +5,12 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-23 23:14:52 
- * Last modified  : 2019-05-23 23:36:35
+ * Last modified  : 2019-05-26 23:11:58
  */
 
 import Head from 'next/head';
-import Links from './Links';
-import css from 'styled-jsx/css'
+import {Links, StyledMain} from 'global/styles';
 import {withRouter} from 'next/router'
-
-const cssVariables = css`
-	:root{
-		--vph: 100vh;
-		--vpw: 100vw;
-		--bs4Purple: #4A298A;
-	}
-`
 
 function formatPath( p ) {
 	if ( p === '/' ) {
@@ -31,16 +22,14 @@ function formatPath( p ) {
 }
 
 const PageHead = ( {router} ) => {
-
 	var thisPath = formatPath( router.pathname );
-
 	return (
 		<Head>
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 			<title>Online Portfolio - {thisPath}</title>
 			<Links />
-			<style global jsx>{cssVariables}</style>
+			<StyledMain />
 		</Head>
 	)
 }

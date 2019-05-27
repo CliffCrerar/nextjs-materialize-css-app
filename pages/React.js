@@ -5,11 +5,10 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-22 22:00:43
- * Last modified  : 2019-05-22 22:01:00
+ * Last modified  : 2019-05-27 01:03:04
  */
 
-import App from 'App';
-import {ReactComponent} from 'components/boilerComponents';
+import {ReactComponent} from 'components/Boiler-Components';
 
 const PageComponent = () => (
 	<main className="container position-relative">
@@ -18,4 +17,4 @@ const PageComponent = () => (
 	</main>
 )
 
-export default App( PageComponent );
+export default PageComponent;

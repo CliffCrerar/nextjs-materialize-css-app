@@ -1,3 +1,7 @@
-import NavBarComponent from 'components/NavBar-component';
+import NavBarComponent from 'components/Layout-Components/NavBar-component';
+import FloatingButtonComponent from 'components/Layout-Components/FloatingBtn-Component';
+import PageHead from 'components/PageHead-Components/PageHead-Component';
 
-export {NavBarComponent}
+export default PageHead;
+
+export {NavBarComponent, FloatingButtonComponent}

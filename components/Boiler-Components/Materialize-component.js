@@ -1,6 +1,6 @@
 /* Materialize PAGE COMPONENT */
 
-import css from 'styled-jsx/css';
+//import css from 'components/Boiler-Components/node_modules/styled-jsx/css';
 
 const styles = {
 	width: '40%'
