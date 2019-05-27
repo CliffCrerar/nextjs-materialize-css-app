@@ -1,4 +1,4 @@
-import {materialize_script, scriptPaths} from './script-paths';
+import {scriptPaths} from './script-paths';
 
-export {materialize_script, scriptPaths};
+export {scriptPaths};
 

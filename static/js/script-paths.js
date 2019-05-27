@@ -11,14 +11,8 @@
 console.log( 'process.env', process.env.NODE_ENV );
 
 
-// const scriptPaths = [
-// 	{materialize: 'static/lib/materialize-css/js/materialize'}
-// ]
+const scriptPaths = [
+	{materialize: 'static/lib/materialize-css/js/materialize'}
+]
 
-// const materialize_script = () => {
-// 	//return require( scriptPaths.materialize );
-// 	return require( 'static/lib/materialize-css/js/materialize' );
-// }
-
-
-// export {materialize_script};
+export {scriptPaths};

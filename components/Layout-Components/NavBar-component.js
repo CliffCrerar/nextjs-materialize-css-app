@@ -15,7 +15,7 @@ const EnumLinks = ( props ) => {
 	const {Brand, links} = DataNavBar;
 	const Links = links.map( ( link, i ) => {
 		return (
-			<Link key={`link-${i}`} href={link.href}>
+			<Link key={`link-${i}`} href={link.href} passHref>
 				<li >
 					<a title={link.title}>{link.caption}</a>
 				</li>
@@ -35,6 +35,8 @@ const EnumLinks = ( props ) => {
 const styles = {
 	navBar: {background: "var(--mcsscolor)"}
 };
+
+//console.log( process.NODE_ENV );
 
 const NavBar = ( props ) => {
 	//console.log( 'props NAV: ', props );

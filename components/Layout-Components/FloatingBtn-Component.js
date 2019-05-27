@@ -17,13 +17,19 @@ class FloatingButtonComponent extends Component {
 
 	componentDidMount() {
 
-		var elems = document.querySelectorAll( '.fixed-action-btn' );
-		console.log( 'elems: ', elems );
-		//var instances = M.FloatingActionButton.init( elems, options );
+		// var elems = document.querySelectorAll( '.fixed-action-btn' );
+		// console.log( M );
+		// var instances = M.FloatingActionButton.init( elems, options );
 		//console.log( 'instances: ', instances );
+		console.log( document );
+	}
 
+	componentDidCatch( error, errorInfo ) {
+		console.log( 'Component did catch', error, errorinfo );
 	}
 	render() {
+		console.log( 'Floating Button' );
+
 		return (
 			<div className="fixed-action-btn" >
 				<a className="btn-floating btn-large red">

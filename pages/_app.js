@@ -2,20 +2,29 @@
 import React from 'react';
 import App, {Container} from 'next/app';
 import WithLayout from 'Index'
-import materialize_script from 'static/js'
+import config from 'config'
 
 class AppContent extends App {
 	constructor ( props ) {
 		super( props )
 	}
 
+	static async getInitialProps( {Component, ctx} ) {
+		let pageProps = {};
+
+		if ( Component.getInitialProps ) {
+			pageProps = await Component.getInitialProps( ctx );
+		}
+
+		return {pageProps};
+	}
+
 	componentDidMount() {
-		console.log( 'component mounted' );
-		//materialize_script();
-		require( 'static/lib/materialize-css/js/materialize' );
+
 	}
 
 	render() {
+		console.log( '_app' );
 		const {Component, ...pageProps} = this.props;
 		return (
 			<Container>

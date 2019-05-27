@@ -5,7 +5,7 @@ const
 
 	//withCSS = require( '@zeit/next-css' ),
 	withSASS = require( '@zeit/next-sass' ),
-	withSourceMaps = require( '@zeit/next-source-maps' )(),
+	// withSourceMaps = require( '@zeit/next-source-maps' )(),
 
 	nextEnv = require( 'next-env' ),
 	dotenvLoad = require( 'dotenv-load' ),
@@ -38,12 +38,8 @@ const nextConfigCommon = withCSS( withSASS( {
 
 const NextConfig = ( phase, {defaultConfig} ) => {
 	console.log( 'phase: ', phase );
-
 	console.log( 'appConstants: ', appConstants );
 	console.log( 'appConstants: ', typeof appConstants );
-
-
-
 }
 
 module.exports = withPlugins(
@@ -55,10 +51,9 @@ module.exports = withPlugins(
 			staticPrefix: 'STATIC_', // prefix for environment variables only available to server
 			publicPrefix: 'PUBLIC_',// prefix for environment variables only available to server and client
 			serverPrefix: 'SERVER_' // prefix for environment variables only available to server
-		} ),
-		[ withSourceMaps ]
+		} )
+		// [ withSourceMaps ]
 	],
 	// Next config
-	//nextConfigCommon
-	NextConfig
+	 NextConfig
 )

@@ -10,7 +10,7 @@
 
 import {HelloWorldComponent} from 'components/Boiler-Components'
 
-const pageTitle = 'Hello Next Boiler'
+const pageTitle = 'Hello Next App'
 const PageComponent = () => {
 	console.log( process.env.PUBLIC_APPMODE );
 	return (
