@@ -1,0 +1,30 @@
+{
+    "name": "nextjs-material-css-app",
+    "version": "0.7.0-alpha",
+    "description": "Nextjs MaterialCSS and Bootstrap4 utilities boiler plate application",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/nextjs-materialize-css-app.git"
+    },
+    "author": "Cliff Crerar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/nextjs-materialize-css-app/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/nextjs-materialize-css-app#readme",
+    "dependencies": {
+        "@zeit/next-sass": "^1.0.1",
+        "next": "^8.1.0",
+        "node-sass": "^4.12.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "styled-jsx": "^3.2.1"
+    }
+}
