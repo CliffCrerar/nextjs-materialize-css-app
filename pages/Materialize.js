@@ -12,7 +12,7 @@ import {MaterializeComponent} from 'components/Default';
 
 const PageComponent = () => (
 	<main className="container position-relative">
-		<h1 className="w-100 text-center">Materialize CSS</h1>
+		<h1 className="w-100 text-center pt-4">Materialize CSS</h1>
 		<MaterializeComponent />
 	</main>
 )

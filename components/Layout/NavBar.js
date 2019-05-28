@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-22 01:18:10
- * Last modified  : 2019-05-28 01:45:03
+ * Last modified  : 2019-05-28 05:35:01
  */
 
 import Link from 'next/link'
@@ -37,7 +37,7 @@ const styles = {
 const NavBar = ( props ) => {
 	//console.log( 'props NAV: ', props );
 	return (
-		<nav className="navBar" style={styles.navBar}>
+		<nav id="nav-Bar" className="navBar" style={styles.navBar}>
 			<div className="navbar-links">
 				<EnumLinks links={props.navLinks} brand={props.brand} />
 			</div>
