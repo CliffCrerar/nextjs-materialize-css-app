@@ -32,7 +32,7 @@ const EnumLinks = ( {brand, links} ) => {
 	)
 }
 const styles = {
-	navBar: {background: "var(--mcsscolor)"}
+	navBar: {background: "var(--dark-primary)"}
 };
 const NavBar = ( props ) => {
 	//console.log( 'props NAV: ', props );

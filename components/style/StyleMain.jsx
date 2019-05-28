@@ -16,7 +16,7 @@ function StyledMain() {
 			font-weight: normal;
 		}
 		html,body{
-			min-height: var(--vph);
+			height: var(--vph);
 		}
 		h1,h2,h3,h4,h5,h6{
 			font-family: Kodchasan !important;
@@ -30,11 +30,6 @@ function StyledMain() {
 		}
 		.container h1{
 			font-size: 6.5rem;
-			/*color:var(--mcsscolor);*/
-		}
-
-		.container h3{
-			/*color:var(--mcsscolor);*/
 		}
 		`}</style>
 	)

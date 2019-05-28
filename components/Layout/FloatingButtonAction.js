@@ -8,25 +8,25 @@
  * Last modified  : 2019-05-28 07:59:37
  */
 
-import { Component } from 'react';
+import {Component} from 'react';
 
 class FloatingButtonAction extends Component {
-	constructor (props) {
-		super(props)
+	constructor ( props ) {
+		super( props )
 
 	}
 
 	componentDidMount() {
-		console.log('Floating button mounted');
-		var elems = document.querySelectorAll('.fixed-action-btn');
-		M.FloatingActionButton.init(elems, {});
+		console.log( 'Floating button mounted' );
+		var elems = document.querySelectorAll( '.fixed-action-btn' );
+		M.FloatingActionButton.init( elems, {} );
 	}
 
 	render() {
-		console.log('Floating button action');
+		console.log( 'Floating button action' );
 
 		return (
-			<div className="fixed-action-btn" style={{ left: '50%' }}>
+			<div className="fixed-action-btn" >
 				<a className="btn-floating btn-large red">
 					<i className="large material-icons">mode_edit</i>
 				</a>
