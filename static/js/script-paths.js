@@ -5,14 +5,15 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-26 21:56:11
- * Last modified  : 2019-05-26 22:37:14
+ * Last modified  : 2019-05-28 01:59:31
  */
 
-console.log( 'process.env', process.env.NODE_ENV );
+const scriptPaths = {
+	materialize: {
+		development: 'static/lib/materialize-css/js/materialize.js',
+		production: 'static/lib/materialize-css/js/materialize.min.js'
+	}
+}
 
 
-const scriptPaths = [
-	{materialize: 'static/lib/materialize-css/js/materialize'}
-]
-
-export {scriptPaths};
+export default scriptPaths;

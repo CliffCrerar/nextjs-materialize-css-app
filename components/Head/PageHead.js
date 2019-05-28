@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-23 23:14:52 
- * Last modified  : 2019-05-28 01:07:49
+ * Last modified  : 2019-05-28 02:25:12
  */
 
 import Head from 'next/head';
@@ -27,6 +27,7 @@ const PageHead = ( {router} ) => {
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 			<title>Online Portfolio - {thisPath}</title>
+			<link key="favicon" rel="icon" href="static/favicon/favicon.ico" type="image/ico" />
 			<link rel="stylesheet" href="static/css/materialize.css" />
 			<link rel="stylesheet" href="static/css/cssradutils.css" />
 		</Head>

@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-22 01:18:10
- * Last modified  : 2019-05-28 01:01:34
+ * Last modified  : 2019-05-28 01:45:03
  */
 
 import Link from 'next/link'
@@ -31,7 +31,6 @@ const EnumLinks = ( {brand, links} ) => {
 		</div>
 	)
 }
-console.log( 'EnumLinks: ', EnumLinks );
 const styles = {
 	navBar: {background: "var(--mcsscolor)"}
 };
