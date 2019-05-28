@@ -5,12 +5,10 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-28 01:29:22 
- * Last modified  : 2019-05-28 02:16:10
+ * Last modified  : 2019-05-28 02:53:56
  */
 
 import {Component} from 'react';
-import {RunMatJS} from 'static/js';
-
 
 class FloatingButtonAction extends Component {
 	constructor ( props ) {
@@ -20,9 +18,8 @@ class FloatingButtonAction extends Component {
 
 	componentDidMount() {
 		console.log( 'Floating button mounted' );
-		RunMatJS( function () {
-			console.log( 'Test run function' );
-		} )
+		var elems = document.querySelectorAll( '.fixed-action-btn' );
+		M.FloatingActionButton.init( elems );
 	}
 
 	render() {
