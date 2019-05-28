@@ -6,10 +6,10 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-22 00:49:06
- * Last modified  : 2019-05-28 03:43:08
+ * Last modified  : 2019-05-28 06:01:42
  */
 
-import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts} from 'components';
+import {StyleTheme, StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts} from 'components';
 import router from 'next/router'
 router.ready( () => console.log( 'Router is now ready' ) )
 

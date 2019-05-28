@@ -1,3 +1,4 @@
+import StyleTheme from './Style/StyleTheme'
 import StyleGlobal from './Style/StyleIndex'
 import PageHead from './Head/PageHead'
 import NavBar from './Layout/NavBar'
@@ -10,6 +11,7 @@ import Scripts from './Scripts/GlobalScripts'
 
 
 export {
+	StyleTheme,
 	StyleGlobal,
 	Scripts,
 	PageHead,
