@@ -1,6 +1,6 @@
 {
     "name": "nextjs-material-css-app",
-    "version": "0.7.0-alpha",
+    "version": "0.7.5-alpha",
     "description": "Nextjs MaterialCSS and Bootstrap4 utilities boiler plate application",
     "main": "index.js",
     "scripts": {
