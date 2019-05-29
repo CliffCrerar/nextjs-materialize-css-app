@@ -7,7 +7,6 @@
  */
 import {Component} from 'react';
 
-
 class StyleTheme extends Component {
 	constructor ( props ) {
 		super( props )

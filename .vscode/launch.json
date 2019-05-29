@@ -7,6 +7,12 @@
 		{
 			"type": "node",
 			"request": "launch",
+			"name": "Launch observable",
+			"program": "${workspaceFolder}/static/js/observable"
+		},
+		{
+			"type": "node",
+			"request": "launch",
 			"name": "JSON to CSS",
 			"program": "${workspaceFolder}/static/lib/theme/index.js"
 		},
