@@ -5,26 +5,30 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-28 01:29:22
- * Last modified  : 2019-05-29 17:52:21
+ * Last modified  : 2019-05-29 23:39:32
  */
 
-import { Component } from 'react';
+import {Component} from 'react';
+import {themeNames} from 'static/lib/theme'
+//import SharedData from 'service';
 
 class FloatingButtonAction extends Component {
-	constructor (props) {
-		super(props)
+	constructor ( props ) {
+		super( props )
+	}
 
+	activateComponentJS() {
+		var elems = document.querySelectorAll( '.fixed-action-btn' );
+		M.FloatingActionButton.init( elems, {} );
 	}
 
 	componentDidMount() {
-		console.log('Floating button mounted');
-		var elems = document.querySelectorAll('.fixed-action-btn');
-		M.FloatingActionButton.init(elems, {});
+		console.log( 'Floating button mounted' );
+		this.activateComponentJS();
 	}
 
 	render() {
-		console.log('Floating button action');
-
+		console.log( 'Floating button action' );
 		return (
 			<div className="fixed-action-btn" >
 				<a className="btn-floating btn-large red">

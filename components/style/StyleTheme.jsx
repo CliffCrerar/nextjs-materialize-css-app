@@ -3,9 +3,10 @@
  * @summary This is the component that controls the theming for the app
  * @author Cliff Crerar
  * Created at     : 2019-05-28 05:29:56
- * Last modified  : 2019-05-28 07:55:50
+ * Last modified  : 2019-05-29 22:47:37
  */
 import {Component} from 'react';
+import fetch from 'isomorphic-unfetch';
 
 class StyleTheme extends Component {
 	constructor ( props ) {
@@ -21,12 +22,17 @@ class StyleTheme extends Component {
 			[ 'divider-color' ]: '#BDBDBD',
 			darkNavText: false,
 		}
+		console.log( this );
+
+		// this.getInitialProps = async function () {
+		// 	console.log( 'get initial props' );
+		// 	const origin = window.location.origin;
+		// 	const res = await fetch( origin + '/themenamelist' )
+		// 	console.log( 'res: ', res );
+		// }();
 	}
 
-	nameList = Object.entries( this.props.schema ).map( e => e[ 0 ] );
-
 	render() {
-		console.log( 'nameList: ', this.nameList );
 		return (
 			<style jsx global>{`
 			:root{
@@ -63,7 +69,5 @@ class StyleTheme extends Component {
 		)
 	}
 }
-
-//console.log(new StyleTheme());
 
 export default StyleTheme;

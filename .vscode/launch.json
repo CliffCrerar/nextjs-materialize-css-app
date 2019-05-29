@@ -7,6 +7,12 @@
 		{
 			"type": "node",
 			"request": "launch",
+			"name": "Next Server",
+			"program": "${workspaceFolder}/server.js"
+		},
+		{
+			"type": "node",
+			"request": "launch",
 			"name": "Launch observable",
 			"program": "${workspaceFolder}/static/js/observable"
 		},

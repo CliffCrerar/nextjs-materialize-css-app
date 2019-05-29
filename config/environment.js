@@ -7,16 +7,24 @@
  */
 
 const
-	os = require( 'os' );
+	os = require( 'os' ),
+	path = require( 'path' ),
+	x = os.platform() === 'win32' ? ';' : ':'; // delimiter in this context
+//ut = require( 'ut' );
+
+// The app root is where the App.js resides
+const dirs = [
+	'static',
+	'static/lib'
+]
 
 function ProjectPaths( rootDir ) {
-	const
-		x = os.platform() === 'win32' ? ';' : ':', // delimiter in this context
-		node_app = `${rootDir}${x}`,
-		node_lib = `${rootDir}/static/lib${x}`,
-		node_global = `${rootDir}/global${x}`,
-		node_Path = `${node_app}${rootDir}${node_lib}${node_global}`;
-	return node_Path
+	let node_path = [ `${rootDir}${x}` ];
+	for ( let i = 0; i < dirs.length; i++ ) {
+		let thisPath = `${rootDir}${dirs[ i ]}${x}`
+		node_path.push( thisPath );
+	}
+	return node_path.join( '' );
 }
-
-process.env.NODE_PATH = ProjectPaths( process.cwd() );
+//ut.log( 'NODE_PATH: ', ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() ) );
+process.env.NODE_PATH = ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() )
