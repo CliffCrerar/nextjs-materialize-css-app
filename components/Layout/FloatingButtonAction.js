@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-28 01:29:22
- * Last modified  : 2019-05-28 07:59:37
+ * Last modified  : 2019-05-28 08:10:23
  */
 
 import { Component } from 'react';
@@ -19,7 +19,7 @@ class FloatingButtonAction extends Component {
 	componentDidMount() {
 		console.log('Floating button mounted');
 		var elems = document.querySelectorAll('.fixed-action-btn');
-		M.FloatingActionButton.init(elems, {});
+		M.FloatingActionButton.init(elems);
 	}
 
 	render() {
