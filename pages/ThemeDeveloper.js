@@ -15,34 +15,70 @@ class PageComponent extends Component {
 		this.state = {
 			navHeight: 0,
 			windowHeight: 0,
+			setHeight: 0
 		}
 		this.StylesMain = {
-			minHeight: this.state.windowHeight - this.state.navHeight
+			height: this.state.setHeight + ' !important'
 		}
 	}
 
-	componentDidMount() {
-		this.setState( {navHeight: this.getNavHeight(), windowHeigt: window.innerHeight} );
-	}
+	sideSelection = [
+		'Colors', 'Theming', 'Typography', 'Badges', 'Buttons', 'Breadcrumbs', 'Cards', 'Collections', 'Floating', 'Action', 'Button', 'Footer', 'Icons', 'Navbar', 'Pagination', 'Preloadser', 'Collapsible', 'FeatureDiscovery', 'Media', 'Modals', 'Parallax', 'Pushpin', 'Scrollspy', 'Sidenav', 'Tabs', 'Toasts', 'Tooltips', 'Waves'
+	]
 
-	getNavHeight = () => {
-		var topNav = document.getElementById( 'nav-Bar' );
-		return topNav.clientHeight;
-	}
+	/*
+	'Badges','Buttons','Breadcrumbs','Cards','Collections','Floating' 'Action' 'Button','Footer','Icons','Navbar','Pagination','Preloadser','Collapsible','FeatureDiscovery','Media','Modals','Parallax','Pushpin','Scrollspy','Sidenav','Tabs','Toasts','Tooltips','Waves'
+	*/
 
+
+	// getNavHeight = () => {
+	// 	var topNav = document.getElementById( 'nav-Bar' );
+	// 	return topNav.clientHeight;
+	// }
+
+	// componentDidMount() {
+	// 	//this.setState( {navHeight:, windowHeight: window.innerHeight} );
+	// 	this.setState( {setHeight: ( window.innerHeight - this.getNavHeight() ).toString() + 'px'} );
+	// }
 	render() {
-		console.log( this.navHeight );
 		return (
-			<React.Fragment >
+			<main className="h-100">
+				<style jsx>{`
+						.comptheme-container{
+							position: relative;
+						}
+						.theme-dev{
+							position: relative !important;
+							min-height: var(--vph) !important;
+						}
+						.side-nav{
+							margin: 0;
+							border-radius: 0;
+						}
+						.horizontal-line{
+							color: var(--divider-color);
+						}
+					`}</style>
+				<div className="theme-dev d-flex">
+					<div className="card-panel p-0 side-nav w-25">
 
-				<main style={this.StylesMain} className="d-flex flex-row justify-content-space-around	">
-					{/* <TD_SideNav heightStyle={this.StylesMain} /> */}
-					<div style={this.StylesMain} className="w-75 pr-5">
-						<h3 className="w-100 text-right pt-3 text-right">Component theming</h3>
+						<div className="collection pt-0 mt-0">
+							<li className="collection-header"><h4 className="text-center mb-3">Element Index</h4></li>
+							<a href="#!" className="collection-item">Alvin</a>
+							<a href="#!" className="collection-item active">Alvin</a>
+							<a href="#!" className="collection-item">Alvin</a>
+							<a href="#!" className="collection-item">Alvin</a>
+						</div>
+						{/* <hr className="horizontal-line"></hr> */}
 					</div>
-				</main>
+					<div className="comptheme-main w-75">
+						<h3 className="w-100 text-right pt-3 text-right pr-4">Component theming</h3>
+					</div>
+				</div>
 
-			</React.Fragment>
+			</main>
+
+
 		)
 	}
 };

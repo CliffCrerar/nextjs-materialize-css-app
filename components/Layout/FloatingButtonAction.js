@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-28 01:29:22
- * Last modified  : 2019-05-28 08:10:23
+ * Last modified  : 2019-05-29 17:52:21
  */
 
 import { Component } from 'react';
@@ -19,14 +19,14 @@ class FloatingButtonAction extends Component {
 	componentDidMount() {
 		console.log('Floating button mounted');
 		var elems = document.querySelectorAll('.fixed-action-btn');
-		M.FloatingActionButton.init(elems);
+		M.FloatingActionButton.init(elems, {});
 	}
 
 	render() {
 		console.log('Floating button action');
 
 		return (
-			<div className="fixed-action-btn" style={{ left: '50%' }}>
+			<div className="fixed-action-btn" >
 				<a className="btn-floating btn-large red">
 					<i className="large material-icons">mode_edit</i>
 				</a>
