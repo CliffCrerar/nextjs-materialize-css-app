@@ -9,8 +9,6 @@
  */
 
 import {Component} from 'react';
-import {themeNames} from 'static/lib/theme'
-//import SharedData from 'service';
 
 class FloatingButtonAction extends Component {
 	constructor ( props ) {
@@ -27,13 +25,33 @@ class FloatingButtonAction extends Component {
 		this.activateComponentJS();
 	}
 
+	SetThemeSelection( themeNames ) {
+		console.log( 'themeNames: ', themeNames );
+		const Selections = themeNames.map( ( name, idx ) => {
+			return (
+				<li key={'themeSelect' + idx}>
+					<a className="btn-floating red">
+						<i className="material-icons">insert_chart</i>
+					</a>
+				</li>
+			)
+		} );
+		return (
+			<ul>
+				{Selections}
+			</ul>
+		)
+	}
+
 	render() {
 		console.log( 'Floating button action' );
+		//const ThemeSelection = this.SetThemeSelection( this.props.themeNames );
 		return (
 			<div className="fixed-action-btn" >
 				<a className="btn-floating btn-large red">
 					<i className="large material-icons">mode_edit</i>
 				</a>
+
 				<ul>
 					<li>
 						<a className="btn-floating red">
@@ -58,6 +76,12 @@ class FloatingButtonAction extends Component {
 				</ul>
 			</div>
 		)
+	}
+}
+
+FloatingButtonAction.getInitialProps = function () {
+	return {
+
 	}
 }
 

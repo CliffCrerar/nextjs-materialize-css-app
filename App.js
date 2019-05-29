@@ -9,7 +9,7 @@
  * Last modified  : 2019-05-28 07:44:43
  */
 
-import {StyleTheme, StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts} from 'components';
+import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts} from 'components';
 import themeSchema from 'static/lib/theme/themes.json';
 import router from 'next/router'
 router.ready( () => console.log( 'Router is now ready' ) )
@@ -33,7 +33,7 @@ const App = PageComponent => {
 			<StyleGlobal theme={themeSchema} />
 			<NavBar brand={Brand} navLinks={links} />
 			<PageComponent />
-			<FloatingButtonAction />
+			<FloatingButtonAction themeNames={Object.entries( themeSchema ).map( e => e[ 0 ] )} />
 			<Scripts />
 		</React.Fragment>
 	)

@@ -8,6 +8,7 @@
 import {Component} from 'react';
 import fetch from 'isomorphic-unfetch';
 
+
 class StyleTheme extends Component {
 	constructor ( props ) {
 		super( props )
@@ -68,6 +69,14 @@ class StyleTheme extends Component {
 			`}</style>
 		)
 	}
+}
+
+StyleTheme.getInitialProps = function () {
+
+	const initProps = {
+		themes: require( 'static/lib/theme/themes.json' )
+	};
+	return initProps;
 }
 
 export default StyleTheme;

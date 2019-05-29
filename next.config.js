@@ -13,7 +13,7 @@ require( './config' );
 const withSourceMaps = require( '@zeit/next-source-maps' )();
 const withSass = require( '@zeit/next-sass' );
 const withPlugins = require( 'next-compose-plugins' );
-const buildTheme = require( './static/lib/theme' )
+
 
 // Plugins
 var plugins = [ withSourceMaps, withSass ]
