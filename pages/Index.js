@@ -10,7 +10,7 @@
 import App from 'App'
 import {HelloWorldComponent} from 'components/Default'
 
-const pageTitle = 'Hello Next App'
+const pageTitle = 'Online'
 const PageComponent = () => {
 	console.log( 'Index' );
 	return (
