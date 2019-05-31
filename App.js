@@ -6,7 +6,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-22 00:49:06
- * Last modified  : 2019-05-28 07:44:43
+ * Last modified  : 2019-05-30 23:07:28
  */
 
 import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts} from 'components';
@@ -15,13 +15,14 @@ import router from 'next/router'
 router.ready( () => console.log( 'Router is now ready' ) )
 
 const AppMode = process.env.NODE_ENV;
-const Brand = 'Next Materialize Starter App';
+const Brand = 'Cliff Crerar';
 const links = [
-	{href: '/', caption: "Hello World", title: 'Next-Materialize-B4-App'},
-	// {href: '/materialize', caption: "Materialize-CSS", title: 'Materialize CSS'},
+	{href: '/', caption: "Home", title: 'Application-Landing-page'},
+	{href: '/about', caption: "About", title: 'About this Page'},
 	// {href: '/react', caption: "React", title: 'React'},
 	// {href: './themeDeveloper', caption: "Theme-developer", title: "Theme-developer"},
 	// {href: '/test', caption: "Test", title: 'Test'}
+	{href: '/colors', caption: "Colors", title: 'Colors page'}
 ];
 
 const App = PageComponent => {

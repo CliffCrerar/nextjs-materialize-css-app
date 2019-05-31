@@ -3,11 +3,11 @@
  * @summary This is the component that controls the theming for the app
  * @author Cliff Crerar
  * Created at     : 2019-05-28 05:29:56
- * Last modified  : 2019-05-29 22:47:37
+ * Last modified  : 2019-05-31 00:35:03
  */
 import {Component} from 'react';
 import fetch from 'isomorphic-unfetch';
-
+var currentTheme;
 
 class StyleTheme extends Component {
 	constructor ( props ) {
@@ -19,10 +19,12 @@ class StyleTheme extends Component {
 			[ 'text-primary-color' ]: '#FFFFFF',
 			[ 'accent-color' ]: '#FF5252',
 			[ 'primary-text-color' ]: '#212121',
-			[ 'secondary-text-color' ]: '#212121',
+			[ 'secondary-text-color' ]: '#757575',
 			[ 'divider-color' ]: '#BDBDBD',
 			darkNavText: false,
 		}
+		currentTheme = this.s;
+		console.log( 'currentTheme: ', currentTheme );
 		console.log( this );
 
 		// this.getInitialProps = async function () {
@@ -78,5 +80,7 @@ StyleTheme.getInitialProps = function () {
 	};
 	return initProps;
 }
+
+
 
 export default StyleTheme;
