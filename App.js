@@ -34,7 +34,9 @@ const App = PageComponent => {
 			<StyleGlobal theme={themeSchema} />
 			<NavBar brand={Brand} navLinks={links} />
 			<PageComponent />
-			<FloatingButtonAction themeNames={Object.entries( themeSchema ).map( e => e[ 0 ] )} />
+			<FloatingButtonAction
+				themeNames={Object.entries( themeSchema ).map( e => e[ 0 ] )}
+				themes={themeSchema} />
 			<Scripts />
 		</React.Fragment>
 	)

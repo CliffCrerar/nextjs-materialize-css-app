@@ -19,9 +19,9 @@ class PageComponent extends Component {
 		console.log( 'Colors mounted' )
 		const gridElements = document.getElementsByClassName( 'color-grid-itm' );
 		for ( let i = 0; i < gridElements.length; i++ ) {
-			console.log( gridElements[ 0 ] );
+			//console.log( gridElements[ 0 ] );
 			const thisElStyle = window.getComputedStyle( gridElements[ i ] );
-			console.log( 'thisElStyle: ', thisElStyle );
+			//console.log( 'thisElStyle: ', thisElStyle );
 		}
 
 

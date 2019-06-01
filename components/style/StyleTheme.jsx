@@ -3,15 +3,17 @@
  * @summary This is the component that controls the theming for the app
  * @author Cliff Crerar
  * Created at     : 2019-05-28 05:29:56
- * Last modified  : 2019-05-31 00:35:03
+ * Last modified  : 2019-06-01 02:16:25
  */
 import {Component} from 'react';
 import fetch from 'isomorphic-unfetch';
+import 'static/scss/_1_components.scss';
 var currentTheme;
 
 class StyleTheme extends Component {
 	constructor ( props ) {
 		super( props )
+		// console.log( 'props: ', props );
 		this.state = {
 			[ 'dark-primary-color' ]: '#1976D2',
 			[ 'default-primary-color' ]: '#2196F3',
@@ -23,9 +25,6 @@ class StyleTheme extends Component {
 			[ 'divider-color' ]: '#BDBDBD',
 			darkNavText: false,
 		}
-		currentTheme = this.s;
-		console.log( 'currentTheme: ', currentTheme );
-		console.log( this );
 
 		// this.getInitialProps = async function () {
 		// 	console.log( 'get initial props' );
@@ -38,6 +37,7 @@ class StyleTheme extends Component {
 	render() {
 		return (
 			<style jsx global>{`
+			@import 'static/scss/_1_components.scss';
 			:root{
 				--dark-primary:${this.state[ 'dark-primary-color' ]}; 			 /* DARK PRIMARY  	*/
 				--default-primary:${this.state[ 'default-primary-color' ]};  /* LIGHT PRIMARY  	*/
