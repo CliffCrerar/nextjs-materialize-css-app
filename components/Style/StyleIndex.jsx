@@ -1,13 +1,16 @@
-import StyleMain from './StyleMain';
-import StyleVariables from './StyleVariables';
-import StyleFonts from './StyleFonts';
-import StyleTheme from './StyleTheme';
+import StyleMain from "./StyleMain";
+import StyleVariables from "./StyleVariables";
+import StyleFonts from "./StyleFonts";
+import StyleTheme from "./StyleTheme";
 
-function StyleGlobal(props) {
+function StyleGlobal( props ) {
 	return (
 		<React.Fragment>
 			<StyleFonts />
-			<StyleTheme themes={props.themes} />
+			<StyleTheme
+				themes={props.themes}
+				currentTheme={props.currentTheme}
+			/>
 			<StyleVariables />
 			<StyleMain />
 		</React.Fragment>

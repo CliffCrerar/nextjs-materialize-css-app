@@ -4,8 +4,20 @@
 	"cSpell.words": [
 		"appmode",
 		"blue",
+		"component",
+		"cookieservice",
 		"deeporange",
+		"defaultconfig",
+		"isomorphic",
+		"newtheme",
 		"proot",
-		"public"
+		"public",
+		"styletheme",
+		"themeservice",
+		"theming",
+		"unfetch",
+		"unmount",
+		"will",
+		"willmount"
 	]
 }

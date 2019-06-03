@@ -5,53 +5,52 @@
  * Created at     : 2019-05-28 05:29:56
  * Last modified  : 2019-06-03 01:16:54
  */
-import { Component } from 'react';
-import fetch from 'isomorphic-unfetch';
-import { themeservice, cookieservice } from 'static/js/services';
+import {Component} from "react";
+import fetch from "isomorphic-unfetch";
+import {themeservice, cookieservice} from "static/js/services";
 
-import 'static/scss/_1_components.scss';
-
-const themeName = cookieservice.getTheme('theme');
+import "static/scss/_1_components.scss";
 
 function confirmAlert() {
-	const r = confirm('Page reload is required to display new theme');
-	console.log('r: ', r);
-	if (r) {
+	const r = confirm( "Page reload is required to display new theme" );
+	console.log( "r: ", r );
+	if ( r ) {
 		window.location.reload();
 	}
 }
 class StyleTheme extends Component {
-	constructor(props) {
-		super(props);
-		console.log('props: ', props);
-		console.log(this.props.themes[cookieservice.getTheme('theme')]);
+	constructor ( props ) {
+		super( props );
+		console.log( "props: ", props );
 		this.state = {
-			theme: {
-				['dark-primary-color']: '#1976D2',
-				['default-primary-color']: '#2196F3',
-				['light-primary-color']: '#BBDEFB',
-				['text-primary-color']: '#FFFFFF',
-				['accent-color']: '#FF5252',
-				['primary-text-color']: '#212121',
-				['secondary-text-color']: '#757575',
-				['divider-color']: '#BDBDBD',
+			theme: this.props.themes[ this.props.currentTheme ],
+			themeFb: {
+				[ "dark-primary-color" ]: "#1976D2",
+				[ "default-primary-color" ]: "#2196F3",
+				[ "light-primary-color" ]: "#BBDEFB",
+				[ "text-primary-color" ]: "#FFFFFF",
+				[ "accent-color" ]: "#FF5252",
+				[ "primary-text-color" ]: "#212121",
+				[ "secondary-text-color" ]: "#757575",
+				[ "divider-color" ]: "#BDBDBD"
 			},
-			darkNavText: false,
+			darkNavText: false
 		};
 	}
 
 	componentDidMount = () => {
-		themeName && this.setState({ theme: this.props.themes[themeName] });
-		themeservice.subscribe(newtheme => {
-			console.log('newtheme: ', newtheme);
-			cookieservice.setTheme(newtheme, () => confirmAlert());
-		});
+		themeservice.subscribe( newtheme => {
+			console.log( "newtheme: ", newtheme );
+			cookieservice.setTheme( newtheme, () => confirmAlert() );
+		} );
+		const navBarHeight = document.getElementById( 'nav-Bar' ).clientHeight;
+		document.getElementById( 'nav-spacer' ).style.height = navBarHeight + 'px';
 	};
 
 	componentWillmount() {
-		console.log('-> STYLETHEME component will mount');
-		var themeName = cookieservice.getTheme('theme');
-		console.log('themeName from cookie: ', themeName);
+		console.log( "-> STYLETHEME component will mount" );
+		var themeName = cookieservice.getTheme( "theme" );
+		console.log( "themeName from cookie: ", themeName );
 	}
 
 	componentWillUnmount() {
@@ -61,16 +60,16 @@ class StyleTheme extends Component {
 	render() {
 		return (
 			<style jsx global>{`
-				@import 'static/scss/_1_components.scss';
+				@import "static/scss/_1_components.scss";
 				:root {
-					--dark-primary: ${this.state.theme['dark-primary-color']}; /* DARK PRIMARY */
-					--default-primary: ${this.state.theme['default-primary-color']}; /* LIGHT PRIMARY */
-					--light-primary: ${this.state.theme['light-primary-color']}; /* PRIMARY */
-					--text-primary: ${this.state.theme['text-primary-color']}; /* TEXT ICONS */
-					--accent: ${this.state.theme['accent-color']}; /* ACCENT */
-					--primary-text: ${this.state.theme['primary-text-color']}; /* PRIMARY TEXT */
-					--secondary-text: ${this.state.theme['secondary-text-color']}; /* SECONDARY TEXT */
-					--divider: ${this.state.theme['divider-color']}; /* DIVIDER */
+					--dark-primary: ${this.state.theme[ "dark-primary-color" ]}; /* DARK PRIMARY */
+					--default-primary: ${this.state.theme[ "default-primary-color" ]}; /* LIGHT PRIMARY */
+					--light-primary: ${this.state.theme[ "light-primary-color" ]}; /* PRIMARY */
+					--text-primary: ${this.state.theme[ "text-primary-color" ]}; /* TEXT ICONS */
+					--accent: ${this.state.theme[ "accent-color" ]}; /* ACCENT */
+					--primary-text: ${this.state.theme[ "primary-text-color" ]}; /* PRIMARY TEXT */
+					--secondary-text: ${this.state.theme[ "secondary-text-color" ]}; /* SECONDARY TEXT */
+					--divider: ${this.state.theme[ "divider-color" ]}; /* DIVIDER */
 				}
 
 				.text-dark-primary {
@@ -145,8 +144,28 @@ class StyleTheme extends Component {
 					color: var(--divider) !important;
 				}
 
+				.round-1 {
+					border-radius: 5px !important;
+				}
+
+				.round-2 {
+					border-radius: 10px !important;
+				}
+
+				.round-3 {
+					border-radius: 15px !important;
+				}
+
+				.round-4 {
+					border-radius: 20px !important;
+				}
+
+				.round-5 {
+					border-radius: 25px !important;
+				}
+
 				.nav-wrapper a {
-					color: var(${this.state.darkNavText ? '--primary-text' : '--text-primary'});
+					color: var(${this.state.darkNavText ? "--primary-text" : "--text-primary"});
 				}
 			`}</style>
 		);

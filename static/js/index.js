@@ -1,4 +1,3 @@
-import scriptPaths from './script-paths';
-import RunMatJS from './materialize-event-listener';
+import scriptPaths from "./script-paths";
 
-export { scriptPaths, RunMatJS };
+export { scriptPaths };

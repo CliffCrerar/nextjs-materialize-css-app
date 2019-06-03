@@ -10,8 +10,11 @@ import App from 'App'
 import Router from 'next/router';
 
 const PageComponent = props => (
-	<main>
-		<div>{JSON.stringify( Router )}</div>
+	<main class="container">
+		{/* <div>{JSON.stringify( Router )}</div> */}
+
+		<h1 className="w-100 text-center text-default-primary">About</h1>
+
 	</main>
 )
 
