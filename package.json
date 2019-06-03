@@ -1,0 +1,40 @@
+{
+    "name": "nextjs-material-css-app",
+    "version": "0.7.5-alpha",
+    "description": "Nextjs MaterialCSS and Bootstrap4 utilities boiler plate application",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon server.js",
+        "build": "next build",
+        "start": "NODE_ENV=production node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "devSite": "next",
+        "buildSite": "next build",
+        "startSite": "next start"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CliffCrerar/nextjs-materialize-css-app.git"
+    },
+    "author": "Cliff Crerar",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/CliffCrerar/nextjs-materialize-css-app/issues"
+    },
+    "homepage": "https://github.com/CliffCrerar/nextjs-materialize-css-app#readme",
+    "dependencies": {
+        "@zeit/next-sass": "^1.0.1",
+        "@zeit/next-source-maps": "0.0.3",
+        "color-convert": "^2.0.0",
+        "isomorphic-unfetch": "^3.0.0",
+        "js-cookie": "^2.2.0",
+        "next": "^8.1.0",
+        "next-compose-plugins": "^2.2.0",
+        "node-sass": "^4.12.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-hot-keys": "^1.3.1",
+        "rxjs-observable": "0.0.7",
+        "styled-jsx": "^3.2.1"
+    }
+}

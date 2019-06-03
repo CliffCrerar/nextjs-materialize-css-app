@@ -1,0 +1,12 @@
+.selected-theme {
+    --border-color-0: rgba(218, 72, 72);
+    --border-color-1: rgba(218, 72, 72, 1);
+    border: 5px solid var(--border-color-0);
+    // box-shadow: 5px 0px 2px var(--border-color-1), 0px 5px 2px var(--border-color-1), -5px 0px 2px var(--border-color-1), 5px 0px 2px var(--border-color-1);
+}
+
+.theme-btn {
+    &:hover {
+        box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5);
+    }
+}
