@@ -13,7 +13,7 @@ import {ReactComponent} from "components/Boiler-Components";
 const PageComponent = () => (
 
 	<main className="container position-relative mt-5">
-		<h1 className="w-100 text-center text-default-primary">React</h1>
+		<h1 className="w-100 text-center text-default-primary headingShadow" headingShadow>React</h1>
 		<ReactComponent />
 	</main>
 );

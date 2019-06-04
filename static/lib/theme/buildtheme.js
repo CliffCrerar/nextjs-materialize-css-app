@@ -3,12 +3,12 @@
  * @summary Looks at CSS formatter files in ../colors and builds a theme file
  * @author Cliff Crerar
  * Created at     : 2019-05-26 03:59:26
- * Last modified  : 2019-05-29 23:38:17
+ * Last modified  : 2019-06-05 00:44:59
  */
 //var ch1 = require( 'css-to-json/cssjson' );
 const
 	ut = require( 'util' ),
-	CSSJSON = require( '../css-to-json' ),
+	CSSJSON = require( 'static/util/css-to-json' ),
 	fs = require( 'fs' ),
 	path = require( 'path' ),
 	themeNames = require( './themeNames.js' );

@@ -2,7 +2,7 @@
  * GLOBAL CSS
  * @author Cliff Crerar
  * Created at     : 2019-05-23 00:05:19
- * Last modified  : 2019-05-28 05:23:54
+ * Last modified  : 2019-06-04 23:36:56
  */
 
 //import 'static/fonts/Kodchasan/stylesheet.css'
@@ -36,7 +36,7 @@ function StyledMain() {
 		}
 		.container h1{
 			font-size: 6.5rem;
-			
+			font-family: Jura !important;
 		}
 		`}</style>
 	)

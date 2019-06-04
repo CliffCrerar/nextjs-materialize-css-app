@@ -4,11 +4,12 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-30 23:05:13
- * Last modified  : 2019-05-31 01:00:52
+ * Last modified  : 2019-06-05 00:21:16
  */
 import {Component} from "react";
 import App from "App";
 class PageComponent extends Component {
+
 	constructor ( props ) {
 		super( props );
 		this.selectedTheme = this.props.currentTheme;
@@ -30,6 +31,7 @@ class PageComponent extends Component {
 			</span>
 		);
 	}
+
 
 	colorBlocks = arr => {
 		const colorBlocks = arr.map( ( sVar, i ) => {
@@ -71,7 +73,7 @@ class PageComponent extends Component {
 									display:block;
 								}
 				`}</style>
-				<div className="container">
+				<div>
 					<div className="card-panel">
 						<h3 className="text-center mb-3">
 							{this.themeName( this.props.currentTheme )}
@@ -191,8 +193,8 @@ class PageComponent extends Component {
 	render() {
 		const ContainerElement = props => <div>{props.content}</div>;
 		return (
-			<main>
-				<h1 className="text-default-primary text-center mt-2 mb-2">
+			<main class="container">
+				<h1 className="text-default-primary text-center mt-5 mb-3 headingShadow">
 					Color Themes
 				</h1>
 				<ContainerElement content={this.colorBlocks( this.styleVars )} />
@@ -200,6 +202,7 @@ class PageComponent extends Component {
 		);
 	}
 }
+
 
 export default App( PageComponent );
 

@@ -22,8 +22,7 @@
  THE SOFTWARE.
  */
 
-module.exports = CSSTOJSON = new function () {
-
+module.exports = CSSJSON = new function () {
 
 	var base = this;
 
@@ -296,5 +295,3 @@ module.exports = CSSTOJSON = new function () {
 	};
 
 };
-
-console.log( 'CSSTOJSON: ', CSSTOJSON );
