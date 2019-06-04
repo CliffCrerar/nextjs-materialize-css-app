@@ -5,58 +5,79 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-28 01:29:22
- * Last modified  : 2019-06-03 00:19:04
+ * Last modified  : 2019-06-04 02:58:50
  */
 
-import { Component } from 'react';
-import { SetThemeSelection } from './SetSelection';
-import { themeservice } from 'static/js/services';
+import {Component} from 'react';
+import {SetThemeSelection} from './SetSelection';
+import {themeservice} from 'static/js/services';
 //import changeTheme from 'static/js/changeTheme';
 import 'static/scss/floating-button.scss';
 
 class FloatingButtonAction extends Component {
-	constructor(props) {
-		super(props);
-		console.log('props: ', props);
+	constructor ( props ) {
+		super( props );
+		console.log( 'props: ', props );
 		this.state = {
-			selectedTheme: this.props.themeNames[0],
+			selectedTheme: this.props.themeNames[ 0 ],
 			themes: this.props.themes,
 			themeNames: this.props.themeNames,
 		};
+		setTimeout( () => {
+			//this.useCookiesWarn();
+		}, 5000 );
 	}
 
 	updateThemeSelected = evFromClick => {
-		return this.setState({ selectedTheme: this.state.themeNames[evFromClick.target.dataset.anchor] });
+		return this.setState( {selectedTheme: this.state.themeNames[ evFromClick.target.dataset.anchor ]} );
 	};
 
 	activateComponentJS() {
-		var floatingBtn = document.querySelectorAll('.fixed-action-btn');
-		var floatSubBtn = document.querySelectorAll('.tooltipped');
+		var floatingBtn = document.querySelectorAll( '.fixed-action-btn' );
 
-		M.FloatingActionButton.init(floatingBtn, {});
-		M.Tooltip.init(floatSubBtn, {});
+
+		M.FloatingActionButton.init( floatingBtn, {} );
+
+	}
+
+	activateCookiesWarn() {
+		var tapTarget = document.querySelectorAll( '.tap-target' );
+		M.TapTarget.init( tapTarget/*, options */ );
+	}
+
+	useCookiesWarn() {
+		const tapTarget = document.getElementsByClassName( 'tap-target' );
+		console.log( 'tapTarget: ', tapTarget );
+		const instance = M.TapTarget.getInstance( tapTarget );
+		console.log( 'instance: ', instance );
+		instance.next();
 	}
 
 	activateTooltips() {
-		var elems = document.getElementsByClassName(classNames);
+		var floatSubBtn = document.querySelectorAll( '.tooltipped' );
+		M.Tooltip.init( floatSubBtn, {} );
 	}
 
-	componentDidUpdate(/*prevProps, prevState*/) {
+	componentDidUpdate(/*prevProps, prevState*/ ) {
 		//console.log('prevState: ', prevState);
 		//console.log('prevProps: ', prevProps);
-		return themeservice.update(this.state.selectedTheme);
+		return themeservice.update( this.state.selectedTheme );
 	}
 
 	componentDidMount() {
-		console.log('Floating button mounted');
+		console.log( 'Floating button mounted' );
 		this.activateComponentJS();
+		this.activateTooltips()
+		this.activateCookiesWarn()
 	}
 	render() {
-		console.log('Floating button action');
+		console.log( 'Floating button action' );
+
 		return (
 			<div className="fixed-action-btn">
 				<a
-					className="btn-floating btn-large waves-effect waves-light btn btn-floating tooltipped"
+					id="floating-btn"
+					className="btn btn-floating btn-large waves-effect waves-light tooltipped"
 					data-tooltip={'Select a different page theme'}
 					data-position="left"
 				>
@@ -68,12 +89,20 @@ class FloatingButtonAction extends Component {
 					selectedTheme={this.state.selectedTheme}
 					updateThemeSelected={this.updateThemeSelected}
 				/>
+				{/* <!-- Tap Target Structure --> */}
+				<div className="tap-target" data-target="floating-btn">
+					<div className="tap-target-content">
+						<h5>Title</h5>
+						<p>A bunch of text</p>
+					</div>
+				</div>
+
 			</div>
 		);
 	}
 }
 
-FloatingButtonAction.getInitialProps = function() {
+FloatingButtonAction.getInitialProps = function () {
 	const data = {
 		tooltip: 'Change page theme',
 	};
