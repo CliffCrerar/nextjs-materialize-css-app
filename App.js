@@ -15,7 +15,7 @@ import router from "next/router";
 router.ready( () => console.log( "Router is now ready" ) );
 
 const AppMode = process.env.NODE_ENV;
-const Brand = {mainText: "Next.js", accentText: "Materialize CSS"};
+const Brand = {mainText: "Material", accentText: "Next"};
 const links = [
 	{href: "/", caption: "Home", title: "Application-Landing-page"},
 	{href: "/react", caption: "React", title: "React"},

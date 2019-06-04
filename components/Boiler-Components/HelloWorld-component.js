@@ -16,14 +16,14 @@ const styles = css`
 
 function HelloWorldComponent() {
 	return (
-		<div className="container mt-3">
-			<h1 className="text-center w-100 text-default-primary">
-				Hello Next App
+		<div className="container mt-5">
+			<h1 className="text-center w-100 text-default-primary headingShadow">
+				Material <span className="text-accent">Next</span>
 			</h1>
-			<div className="d-flex flex-row justify-content-between mt-2">
+			<div className="d-flex flex-row justify-content-evenly mt-2 align-items-center">
 				<style jsx>{styles}</style>
 
-				<div>
+				<div className="w-25 p-2">
 					<a href="https://nextjs.org/">
 						<img
 							className="img-fluid"
@@ -33,21 +33,50 @@ function HelloWorldComponent() {
 					</a>
 				</div>
 
-				<div>
+				<div className="w-25 p-2">
 					<a href="https://getbootstrap.com/docs/4.3/utilities/borders/">
 						<div className="d-flex flex-column align-items-center">
 							<img
 								className="img-fluid bs4-logo"
 								src="static/img/bootstrap.png"
-								alt="Next.js logo"
+								alt="Bootstrap logo"
 							/>
 						</div>
 					</a>
 				</div>
+
+				<div className="w-25 p-2">
+					<a href="https://getbootstrap.com/docs/4.3/utilities/borders/">
+						<div className="d-flex flex-column align-items-center">
+							<img
+								className="img-fluid bs4-logo"
+								src="static/img/react.svg"
+								alt="React logo"
+							/>
+						</div>
+					</a>
+				</div>
+
+				<div className="w-25 p-2">
+					<a href="https://getbootstrap.com/docs/4.3/utilities/borders/">
+						<div className="d-flex flex-column align-items-center">
+							<img
+								className="img-fluid bs4-logo"
+								src="static/img/materialize.svg"
+								alt="materialize logo"
+							/>
+						</div>
+					</a>
+				</div>
+
 			</div>
 
-			<h5 className="text-center">
-				Next.js with bootstrap 4 utility classes
+			<h4 className="text-center mt-3 mb-3">
+				Next.js <span className="text-divider">|</span> Bootstrap 4 utility <span className="text-divider">|</span> React <span className="text-divider">|</span> Materialize CSS
+			</h4>
+			<hr />
+			<h5 className="mt-3  text-center">
+				<i className="text-secondary">The best of front end, all in one</i>
 			</h5>
 		</div>
 	);

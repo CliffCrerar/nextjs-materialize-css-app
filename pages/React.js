@@ -8,13 +8,14 @@
  * Last modified  : 2019-05-27 01:03:04
  */
 import App from "App";
-import { ReactComponent } from "components/Boiler-Components";
+import {ReactComponent} from "components/Boiler-Components";
 
 const PageComponent = () => (
-	<main className="container position-relative">
+
+	<main className="container position-relative mt-5">
 		<h1 className="w-100 text-center text-default-primary">React</h1>
 		<ReactComponent />
 	</main>
 );
 
-export default App(PageComponent);
+export default App( PageComponent );

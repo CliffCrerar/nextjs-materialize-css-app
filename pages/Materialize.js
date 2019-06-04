@@ -9,10 +9,10 @@
  */
 
 import App from "App";
-import { MaterializeComponent } from "components/Boiler-Components";
+import {MaterializeComponent} from "components/Boiler-Components";
 
 const PageComponent = () => (
-	<main className="container position-relative">
+	<main className="container position-relative mt-5">
 		<h1 className="w-100 text-center text-default-primary">
 			Materialize CSS
 		</h1>
@@ -20,4 +20,4 @@ const PageComponent = () => (
 	</main>
 );
 
-export default App(PageComponent);
+export default App( PageComponent );

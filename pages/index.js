@@ -7,7 +7,7 @@
  */
 import App from "App";
 //import HomePageIndex from "components/bodies/_01_Index";
-import { HelloWorldComponent } from "components/Boiler-Components";
+import {HelloWorldComponent} from "components/Boiler-Components";
 
 const pageContent = {
 	landing: {
@@ -16,13 +16,29 @@ const pageContent = {
 };
 
 const PageComponent = () => {
-	console.log("Index");
+	console.log( "Index" );
 	return (
+
 		<main className="position-relative">
-			<HelloWorldComponent />
-			{/* <HomePageIndex pageContent={pageContent} /> */}
+			<style jsx>{`
+			
+			main{
+				min-height: var(--vph)
+			}
+				.custom-position-1{
+					position: absolute;
+					top: 40%;
+					transform: translateY(-50%);
+					
+				}
+			`}</style>
+			<div className="custom-position-1">
+				<HelloWorldComponent />
+				{/* <HomePageIndex pageContent={pageContent} /> */}
+			</div>
 		</main>
+
 	);
 };
 
-export default App(PageComponent);
+export default App( PageComponent );
