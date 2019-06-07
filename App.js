@@ -12,22 +12,27 @@ import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts} from "comp
 import themeSchema from "static/lib/theme/themes.json";
 import {cookieservice} from "static/js/services";
 import router from "next/router";
-router.ready( () => console.log( "Router is now ready" ) );
 
 const AppMode = process.env.NODE_ENV;
 const Brand = {mainText: "Material", accentText: "Next"};
 const links = [
 	{href: "/", caption: "Home", title: "Application-Landing-page"},
 	{href: "/react", caption: "React", title: "React"},
-	{href: "./materialize", caption: "Materialize-CSS", title: "Materialize CSS"},
+	{href: "./materialize", caption: "Materialize CSS", title: "Materialize CSS"},
 	{href: "/about", caption: "About", title: "About this Page"},
-	{href: "/theming", caption: "Theming", title: "Theming"}
+	{href: "/features", caption: "Features", title: "Features"}
 ];
+
+router.ready( () => {
+	console.log( "Router is now ready" )
+	console.log( 'router: ', router.route );
+	const thisPage = links.filter( link => link.href = router.route )
+	console.log( 'thisPage: ', thisPage );
+} );
 
 function setNavSpacer() {
 	// Fix navbar fixed height
 	var navHeight = document.getElementById( 'nav-Bar' ).clientHeight;
-	console.log( 'navHeight: ', navHeight );
 	document.getElementById( 'nav-spacer' ).style.height = navHeight + 'px';
 }
 

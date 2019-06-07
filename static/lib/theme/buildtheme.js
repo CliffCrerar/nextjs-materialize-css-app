@@ -15,7 +15,7 @@ console.log('PROCESS ENV', process.ENV);
 
 const
     ut = require('util'),
-    CSSJSON = require('../css-to-json'),
+    CSSJSON = require(__dirname + '../css-to-json'),
     fs = require('fs'),
     path = require('path'),
     themeNames = require('./themeNames.js');

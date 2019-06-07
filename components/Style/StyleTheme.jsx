@@ -21,7 +21,7 @@ function confirmAlert() {
 class StyleTheme extends Component {
 	constructor ( props ) {
 		super( props );
-		console.log( "props: ", props );
+		//console.log( "props: ", props );
 		this.state = {
 			theme: this.props.themes[ this.props.currentTheme ],
 			themeFb: {
@@ -40,7 +40,7 @@ class StyleTheme extends Component {
 
 	componentDidMount = () => {
 		themeservice.subscribe( newtheme => {
-			console.log( "newtheme: ", newtheme );
+			//console.log( "newtheme: ", newtheme );
 			cookieservice.setTheme( newtheme, () => confirmAlert() );
 		} );
 		const navBarHeight = document.getElementById( 'nav-Bar' ).clientHeight;
@@ -49,8 +49,8 @@ class StyleTheme extends Component {
 
 	componentWillmount() {
 		console.log( "-> STYLETHEME component will mount" );
-		var themeName = cookieservice.getTheme( "theme" );
-		console.log( "themeName from cookie: ", themeName );
+		//var themeName = cookieservice.getTheme( "theme" );
+		//console.log( "themeName from cookie: ", themeName );
 	}
 
 	componentWillUnmount() {
@@ -173,11 +173,11 @@ class StyleTheme extends Component {
 }
 
 // StyleTheme.getInitialProps = function() {
-// 	const initProps = {
-// 		themes: require('static/lib/theme/themes.json'),
-// 		themeChange: themeChange,
-// 	};
-// 	return initProps;
+//  const initProps = {
+//      themes: require('static/lib/theme/themes.json'),
+//      themeChange: themeChange,
+//  };
+//  return initProps;
 // };
 
 export default StyleTheme;

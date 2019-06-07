@@ -17,7 +17,7 @@ import 'static/scss/floating-button.scss';
 class FloatingButtonAction extends Component {
 	constructor ( props ) {
 		super( props );
-		console.log( 'props: ', props );
+		//console.log( 'props: ', props );
 		this.state = {
 			selectedTheme: this.props.themeNames[ 0 ],
 			themes: this.props.themes,
@@ -47,9 +47,9 @@ class FloatingButtonAction extends Component {
 
 	useCookiesWarn() {
 		const tapTarget = document.getElementsByClassName( 'tap-target' );
-		console.log( 'tapTarget: ', tapTarget );
+
 		const instance = M.TapTarget.getInstance( tapTarget );
-		console.log( 'instance: ', instance );
+
 		instance.next();
 	}
 

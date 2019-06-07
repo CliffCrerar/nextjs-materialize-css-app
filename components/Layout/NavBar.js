@@ -45,8 +45,8 @@ const styles = {
 };
 
 function NavBar( props ) {
-	console.log( 'props: ', props );
-	console.log( "NAVBAR:", this );
+	//console.log( 'props: ', props );
+	//console.log( "NAVBAR:", this );
 	//const navHeight =
 	//console.log("navHeight: ", navHeight);
 	//console.log( 'props NAV: ', props );

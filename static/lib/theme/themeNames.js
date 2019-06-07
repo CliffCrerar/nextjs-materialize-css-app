@@ -13,7 +13,7 @@ const file = fs.existsSync(require('path').join(__dirname, './themes.json')) ?
     false;
 
 module.exports = () => {
-    if (file) return;
-    //console.log( typeof JSON.stringify( Object.entries( file ).map( e => e[ 0 ] ) ) );
-    return fs.writeFileSync('./themeNames.json', JSON.stringify(Object.entries(file).map(e => e[0])));
+    if (!file) return;
+    console.log(JSON.stringify(Object.entries(file).map(e => e[0])));
+    return fs.writeFileSync(require('path').join(__dirname, 'themeNames.json'), JSON.stringify(Object.entries(file).map(e => e[0])));
 }
