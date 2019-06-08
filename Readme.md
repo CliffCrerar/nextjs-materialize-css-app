@@ -24,6 +24,22 @@ The project comes with 3 standard themes:
 2. indigo-blue
 3. pink-indigo
 
+## TODO
+
+* Some content on the features page.
+* Footer
+* Data retrieval makeshift setup
+
+### HOW TO RUN
+
+Create directory where you want to clone;
+
+Clone this URL: https://github.com/CliffCrerar/nextjs-materialize-css-app.git
+
+Run `npm install` in cloned directory.
+
+Run `npm run devSite` should start the front end app.
+
 Create new themes by placing `.css` files create with [material design pallete](https://www.materialpalette.com/)
 
 

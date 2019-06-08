@@ -4,7 +4,7 @@ module.exports = {
 	par1: `
 		The purpose of this amalgamation mainly are base upon development goals:
 	`,
-	list: ['Rapid', 'Modern', 'Simplistic', 'Creative'],
+	list: [ 'Rapid', 'Modern', 'Simplistic', 'Creative' ],
 	par2:
 		'Next.js plays the most critical role in this partnership. It provides the means to quickly put together a react application that is light, and much lighter than other react boilers. Next.js also allows for almost pure CSS writing inside the same file as react which is not available in the create react app.',
 	par4:
