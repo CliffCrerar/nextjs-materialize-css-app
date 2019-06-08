@@ -1,6 +1,4 @@
 {
-	"eslint.enable": true,
-	"javascript.validate.enable": false,
 	"cSpell.words": [
 		"appmode",
 		"blue",
@@ -14,7 +12,9 @@
 		"newtheme",
 		"proot",
 		"public",
+		"service",
 		"styletheme",
+		"themechange",
 		"themeservice",
 		"theming",
 		"tooltipped",

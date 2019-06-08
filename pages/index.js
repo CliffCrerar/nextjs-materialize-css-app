@@ -9,35 +9,26 @@ import App from "App";
 //import HomePageIndex from "components/bodies/_01_Index";
 import {HelloWorldComponent} from "components/Boiler-Components";
 
-const pageContent = {
-	landing: {
-		title: "Interactive Resume"
-	}
-};
-
-const PageComponent = () => {
-	console.log( "Index" );
-	return (
-
-		<main className="position-relative">
-			<style jsx>{`
-			
-			main{
-				min-height: var(--vph)
-			}
-				.custom-position-1{
-					position: absolute;
-					top: 40%;
-					transform: translateY(-50%);
-				}
-			`}</style>
-			<div className="custom-position-1">
-				<HelloWorldComponent />
-				{/* <HomePageIndex pageContent={pageContent} /> */}
-			</div>
-		</main>
-
-	);
+const PageComponent = ( props ) => {
+  console.log( "Index" );
+  return (
+    <main className="position-relative">
+      <style jsx>{`
+        main {
+          min-height: var(--vph);
+        }
+        .custom-position-1 {
+          position: absolute;
+          top: 40%;
+          transform: translateY(-50%);
+        }
+      `}</style>
+      <div className="custom-position-1">
+        <HelloWorldComponent title={props.pageTitle} />
+        {/* <HomePageIndex pageContent={pageContent} /> */}
+      </div>
+    </main>
+  );
 };
 
 export default App( PageComponent );

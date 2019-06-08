@@ -1,3 +1,4 @@
-const aboutData = require('./about');
+const aboutData = require( './about' );
+const links = require( './links' );
 
-export { aboutData };
+module.exports = {aboutData, links};

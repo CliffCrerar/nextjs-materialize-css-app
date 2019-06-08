@@ -9,11 +9,11 @@
  */
 
 const scriptPaths = {
-	documentReady: "static/js/document-ready.js",
-	materialize: {
-		development: "static/lib/materialize-css/js/materialize.js",
-		production: "static/lib/materialize-css/js/materialize.min.js"
-	}
+  documentReady: "static/js/document-ready.js",
+  materialize: {
+    development: "static/lib/materialize-css/js/materialize.js",
+    production: "static/lib/materialize-css/js/materialize.min.js"
+  }
 };
 
 export default scriptPaths;
