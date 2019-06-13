@@ -48,7 +48,7 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
             backgrounds and this can be achieved by either prefixing{" "}
 						<code className="bg-light-primary round-1">text-</code> ,or by
             prefixing <code className="bg-light-primary round-1">bg-</code> to
-																																							the names in the color blocks seen above.
+																																										the names in the color blocks seen above.
           </p>
 					<p>Below please see the available options:</p>
 					<div className="d-flex flex-row">

@@ -32,7 +32,6 @@ const WithLayout = PageComponent => {
 			<StyleGlobal />
 			<NavBar />
 			<div>
-
 				<LoadingSpinner />
 				<div hidden="true">
 					<PageComponent />
