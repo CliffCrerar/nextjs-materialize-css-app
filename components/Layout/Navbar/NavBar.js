@@ -7,10 +7,7 @@
  */
 
 import Link from "next/link";
-
-const navHeight = () => {
-	return document.getElementById( "nav-Bar" ).clientHeight;
-};
+import {brand, links} from 'static/data';
 
 const EnumLinks = ( {brand, links} ) => {
 	const Links = links.map( ( link, i ) => {
@@ -28,10 +25,10 @@ const EnumLinks = ( {brand, links} ) => {
 			<img className="img-fluid mt-1" src="static/img/cc-logo-flat.png" />
 			<a href="#" className="brand-logo ml-2">
 				<span className="ml-1 mr-2 font-weight-bolder">
-					{brand.mainText}
+					{brand.brand.mainText}
 				</span>
 				<span className="text-accent font-weight-bold">
-					{brand.accentText}
+					{brand.brand.accentText}
 				</span>
 			</a>
 			<ul id="nav-mobile" className="right hide-on-med-and-down mr-5">
@@ -59,12 +56,18 @@ function NavBar( props ) {
 				style={styles.navBar}
 			>
 				<div className="navbar-links">
-					<EnumLinks links={props.navLinks} brand={props.brand} />
+					<EnumLinks links={props.links} brand={props.brand} />
 				</div>
 			</nav>
 			{/* {props.setNavSpacer()} */}
 		</React.Fragment>
 	);
 };
+
+
+NavBar.defaultProps = {
+	brand: brand,
+	links: links
+}
 
 export default NavBar;

@@ -1,1 +1,122 @@
-{"blue-deeporange":{"dark-primary-color":"#1976D2","default-primary-color":"#2196F3","light-primary-color":"#BBDEFB","text-primary-color":"#FFFFFF","accent-color":"#FF5722","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"blue-green":{"dark-primary-color":"#1976D2","default-primary-color":"#2196F3","light-primary-color":"#BBDEFB","text-primary-color":"#FFFFFF","accent-color":"#4CAF50","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"blue-grey-brown":{"dark-primary-color":"#455A64","default-primary-color":"#607D8B","light-primary-color":"#CFD8DC","text-primary-color":"#FFFFFF","accent-color":"#795548","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"brown-grey":{"dark-primary-color":"#5D4037","default-primary-color":"#795548","light-primary-color":"#D7CCC8","text-primary-color":"#FFFFFF","accent-color":"#9E9E9E","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"cyan-light-blue":{"dark-primary-color":"#0097A7","default-primary-color":"#00BCD4","light-primary-color":"#B2EBF2","text-primary-color":"#FFFFFF","accent-color":"#03A9F4","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"cyan-purple":{"dark-primary-color":"#0097A7","default-primary-color":"#00BCD4","light-primary-color":"#B2EBF2","text-primary-color":"#FFFFFF","accent-color":"#E040FB","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"grey-blue-grey":{"dark-primary-color":"#616161","default-primary-color":"#9E9E9E","light-primary-color":"#F5F5F5","text-primary-color":"#212121","accent-color":"#607D8B","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"indigo-blue":{"dark-primary-color":"#303F9F","default-primary-color":"#3F51B5","light-primary-color":"#C5CAE9","text-primary-color":"#FFFFFF","accent-color":"#448AFF","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"orange-green":{"dark-primary-color":"#F57C00","default-primary-color":"#FF9800","light-primary-color":"#FFE0B2","text-primary-color":"#212121","accent-color":"#4CAF50","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"pink-indigo":{"dark-primary-color":"#C2185B","default-primary-color":"#E91E63","light-primary-color":"#F8BBD0","text-primary-color":"#FFFFFF","accent-color":"#536DFE","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"teal-pink":{"dark-primary-color":"#00796B","default-primary-color":"#009688","light-primary-color":"#B2DFDB","text-primary-color":"#FFFFFF","accent-color":"#FF4081","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"},"yellow-brown":{"dark-primary-color":"#FBC02D","default-primary-color":"#FFEB3B","light-primary-color":"#FFF9C4","text-primary-color":"#212121","accent-color":"#795548","primary-text-color":"#212121","secondary-text-color":"#757575","divider-color":"#BDBDBD"}}
+{
+    "blue-deeporange": {
+        "dark-primary-color": "#1976D2",
+        "default-primary-color": "#2196F3",
+        "light-primary-color": "#BBDEFB",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#FF5722",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "blue-green": {
+        "dark-primary-color": "#1976D2",
+        "default-primary-color": "#2196F3",
+        "light-primary-color": "#BBDEFB",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#4CAF50",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "blue-grey-brown": {
+        "dark-primary-color": "#455A64",
+        "default-primary-color": "#607D8B",
+        "light-primary-color": "#CFD8DC",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#795548",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "brown-grey": {
+        "dark-primary-color": "#5D4037",
+        "default-primary-color": "#795548",
+        "light-primary-color": "#D7CCC8",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#9E9E9E",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "cyan-light-blue": {
+        "dark-primary-color": "#0097A7",
+        "default-primary-color": "#00BCD4",
+        "light-primary-color": "#B2EBF2",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#03A9F4",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "cyan-purple": {
+        "dark-primary-color": "#0097A7",
+        "default-primary-color": "#00BCD4",
+        "light-primary-color": "#B2EBF2",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#E040FB",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "grey-blue-grey": {
+        "dark-primary-color": "#616161",
+        "default-primary-color": "#9E9E9E",
+        "light-primary-color": "#F5F5F5",
+        "text-primary-color": "#212121",
+        "accent-color": "#607D8B",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "indigo-blue": {
+        "dark-primary-color": "#303F9F",
+        "default-primary-color": "#3F51B5",
+        "light-primary-color": "#C5CAE9",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#448AFF",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "orange-green": {
+        "dark-primary-color": "#F57C00",
+        "default-primary-color": "#FF9800",
+        "light-primary-color": "#FFE0B2",
+        "text-primary-color": "#212121",
+        "accent-color": "#4CAF50",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "pink-indigo": {
+        "dark-primary-color": "#C2185B",
+        "default-primary-color": "#E91E63",
+        "light-primary-color": "#F8BBD0",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#536DFE",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "teal-pink": {
+        "dark-primary-color": "#00796B",
+        "default-primary-color": "#009688",
+        "light-primary-color": "#B2DFDB",
+        "text-primary-color": "#FFFFFF",
+        "accent-color": "#FF4081",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    },
+    "yellow-brown": {
+        "dark-primary-color": "#FBC02D",
+        "default-primary-color": "#FFEB3B",
+        "light-primary-color": "#FFF9C4",
+        "text-primary-color": "#212121",
+        "accent-color": "#795548",
+        "primary-text-color": "#212121",
+        "secondary-text-color": "#757575",
+        "divider-color": "#BDBDBD"
+    }
+}

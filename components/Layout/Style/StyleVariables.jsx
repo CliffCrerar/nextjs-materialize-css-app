@@ -8,15 +8,17 @@
 var test = '#4A298A'
 
 const StyleVariables = () => (
-	<style global jsx>{`
-		:root {
-			--vph: 100vh;
-			--vpw: 100vw;
-			/*--bs4Purple: ${test};*/
-			/* --mcsscolor: #ee6e73; */
-			/*--mcsscolor: #3F51B5;*/
-		}
-	`}</style>
+	<React.Fragment>
+		<style global jsx>{`
+			:root {
+				--vph: 100vh;
+				--vpw: 100vw;
+				/*--bs4Purple: ${test};*/
+				/* --mcsscolor: #ee6e73; */
+				/*--mcsscolor: #3F51B5;*/
+			}
+		`}</style>
+	</React.Fragment>
 )
 
 export default StyleVariables;

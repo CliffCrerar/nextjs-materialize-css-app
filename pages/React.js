@@ -7,7 +7,7 @@
  * Created at     : 2019-05-22 22:00:43
  * Last modified  : 2019-05-27 01:03:04
  */
-import App from "App";
+import WithLayout from 'WithLayout.jsx'
 import {ReactComponent} from "components/Boiler-Components";
 
 const PageComponent = () => (
@@ -18,4 +18,4 @@ const PageComponent = () => (
 	</main>
 );
 
-export default App( PageComponent );
+export default WithLayout( PageComponent );

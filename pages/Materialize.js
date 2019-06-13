@@ -8,7 +8,7 @@
  * Last modified  : 2019-06-05 00:23:34
  */
 
-import App from "App";
+import WithLayout from 'WithLayout.jsx'
 import {MaterializeComponent} from "components/Boiler-Components";
 
 const PageComponent = () => (
@@ -21,4 +21,4 @@ const PageComponent = () => (
 	</main>
 );
 
-export default App( PageComponent );
+export default WithLayout( PageComponent );

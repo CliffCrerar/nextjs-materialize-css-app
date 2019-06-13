@@ -15,7 +15,9 @@ const
 // The app root is where the App.js resides
 const dirs = [
 	'static',
-	'static/lib'
+	'static/lib',
+	'pages',
+	'components/Layout'
 ]
 
 function ProjectPaths( rootDir ) {

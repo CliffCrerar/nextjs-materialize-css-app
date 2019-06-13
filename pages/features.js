@@ -7,14 +7,16 @@
  * Last modified  : 2019-06-05 00:21:16
  */
 import {Component} from "react";
-import App from "App";
+import WithLayout from 'WithLayout.jsx'
 import ColorBlocks from 'components/Boiler-Components/Features/ColorBlocks';
+import {theme, themeNames} from 'static/lib/theme'
+import cookieservice from '../static/js/services/cookies-service';
 class PageComponent extends Component {
 
 	constructor ( props ) {
 		super( props );
-		this.selectedTheme = this.props.currentTheme;
-		this.styleVars = Object.entries( props.theme[ this.props.currentTheme ] );
+		this.selectedTheme = cookieservice.getTheme() || 'blue-deeporange';
+		this.styleVars = Object.entries( theme[ this.selectedTheme ] );
 	}
 
 	componentDidMount() {
@@ -50,9 +52,12 @@ class PageComponent extends Component {
 		);
 	}
 }
-
-
-export default App( PageComponent );
+PageComponent.defaultProps = {
+	theme: theme,
+	themeNames: themeNames,
+	currentTheme: cookieservice.getTheme() || 'blue-deeporange'
+}
+export default WithLayout( PageComponent );
 
 /* --dark-primary:${this.state[ 'dark-primary-color' ]};              DARK PRIMARY      */
 /* --default-primary:${this.state[ 'default-primary-color' ]};  LIGHT PRIMARY   */

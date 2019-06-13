@@ -30,7 +30,9 @@ var plugins = [
 const NextAppConfig = ( phases, {defaultconfig} ) => {
 	//console.log( 'defaultconfig: ', defaultconfig );
 
-	return defaultconfig;
+	return {
+		target: 'serverless'
+	};
 };
 
 // Implementations

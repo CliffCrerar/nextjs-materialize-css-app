@@ -9,12 +9,14 @@
  */
 
 const StyleFonts = () => (
-	<style global jsx>{`
+	<React.Fragment>
+		<style jsx global>{`
 		@import 'static/fonts/Kodchasan/stylesheet.css';
 		@import 'static/fonts/Montserrat/stylesheet.css';
 		@import 'static/lib/material-icons/material-icons.css';
 		@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
 	`}</style>
+	</React.Fragment>
 );
 
 export default StyleFonts;

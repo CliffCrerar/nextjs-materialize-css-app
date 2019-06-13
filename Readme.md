@@ -2,8 +2,6 @@
 <!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
 # Next.js MaterializeCSS with Bootstrap4 utilities starter app
 
-## <i style="color: red">CURRENTLY OUT OF ORDER </i>
-
 ## About
 
 The tooling docs are still under construction but feel free to try out the application and suggest improvments.
