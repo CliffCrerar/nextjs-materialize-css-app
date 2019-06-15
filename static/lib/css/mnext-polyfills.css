@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+[hidden] {
+    display: none !important;
+}

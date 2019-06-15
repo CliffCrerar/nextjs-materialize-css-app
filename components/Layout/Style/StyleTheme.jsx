@@ -53,7 +53,6 @@ class StyleTheme extends Component {
 		return (
 			<React.Fragment>
 				<style jsx global>{`
-					
 					:root {
 						--dark-primary: ${this.state.theme[ "dark-primary-color" ]}; /* DARK PRIMARY */
 						--default-primary: ${this.state.theme[ "default-primary-color" ]}; /* LIGHT PRIMARY */
@@ -123,13 +122,5 @@ class StyleTheme extends Component {
 		);
 	}
 }
-
-// StyleTheme.getInitialProps = function() {
-//  const initProps = {
-//      themes: require('static/lib/theme/themes.json'),
-//      themeChange: themeChange,
-//  };
-//  return initProps;
-// };
 
 export default StyleTheme;
