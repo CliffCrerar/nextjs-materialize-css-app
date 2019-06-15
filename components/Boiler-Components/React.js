@@ -1,7 +1,4 @@
 /* REACT PAGE COMPONENT */
-
-//import css from 'components/Boiler-Components/node_modules/styled-jsx/css';
-
 const styles = {
 	width: "40%"
 };
@@ -9,12 +6,11 @@ const styles = {
 const ReactComp = () => {
 	return (
 		<div>
-
 			<style jsx>{`
-			.custom-width{
-				width: 30%;
-			}
-		`}</style>
+				.custom-width{
+					width: 30%;
+				}
+			`}</style>
 			<div className="d-flex justify-content-around align-items-center position-relative">
 				<img className="p-3" style={styles} src="static/img/react.svg" />
 				<div>

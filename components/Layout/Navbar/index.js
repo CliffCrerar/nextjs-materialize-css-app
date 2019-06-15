@@ -3,7 +3,7 @@
  * @summary Navigation main component export
  * @author Cliff Crerar
  * Created at     : 2019-05-22 01:18:10
- * Last modified  : 2019-05-31 21:05:11
+ * Last modified  : 2019-06-15 15:16:01
  */
 
 import Link from "next/link";
@@ -19,7 +19,6 @@ const EnumLinks = ( {brand, links} ) => {
 			</li>
 		);
 	} );
-
 	return (
 		<div className="nav-wrapper pl-5">
 			<img className="img-fluid mt-1" src="static/img/cc-logo-flat.png" />
@@ -40,7 +39,6 @@ const EnumLinks = ( {brand, links} ) => {
 const styles = {
 	navBar: {background: "var(--dark-primary)"}
 };
-
 function NavBar( props ) {
 	//console.log( 'props: ', props );
 	//console.log( "NAVBAR:", this );

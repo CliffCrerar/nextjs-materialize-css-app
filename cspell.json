@@ -1,3 +1,35 @@
 {
-	"ignorePaths":["./license.txt","dist"]
+    "version": "0.1",
+    "ignorePaths": [
+        "./license.txt",
+        "dist"
+    ],
+    "words": [
+        "appmode",
+        "blue",
+        "component",
+        "cookieservice",
+        "cssjson",
+        "csstojson",
+        "deeporange",
+        "defaultconfig",
+        "esformatter",
+        "isomorphic",
+        "mnext",
+        "newtheme",
+        "prefetch",
+        "proot",
+        "public",
+        "rad",
+        "service",
+        "styletheme",
+        "themechange",
+        "themeservice",
+        "theming",
+        "tooltipped",
+        "unfetch",
+        "unmount",
+        "will",
+        "willmount"
+    ]
 }

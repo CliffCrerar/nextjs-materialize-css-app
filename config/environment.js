@@ -3,14 +3,13 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2019-05-27 23:58:19 
- * Last modified  : 2019-05-27 23:59:33
+ * Last modified  : 2019-06-15 15:25:39
  */
 
 const
 	os = require( 'os' ),
 	path = require( 'path' ),
 	x = os.platform() === 'win32' ? ';' : ':'; // delimiter in this context
-//ut = require( 'ut' );
 
 // The app root is where the App.js resides
 const dirs = [

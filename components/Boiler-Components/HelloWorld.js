@@ -1,7 +1,5 @@
 /* BOILER COMPONENT */
-
 import css from "styled-jsx/css";
-
 const styles = css`
 	.bs4-logo {
 		transform: scale(1);
@@ -13,7 +11,6 @@ const styles = css`
 		color: var(--bs4Purple);
 	}
 `;
-
 function HelloWorld() {
 	return (
 		<div className="container mt-5">

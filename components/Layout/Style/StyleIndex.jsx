@@ -1,5 +1,5 @@
-import StyleMain from "./StyleMain";
-import StyleVariables from "./StyleVariables";
+// import StyleTypography from "./z_StyleTypography";
+//import StyleVariables from "./z_StyleVariables";
 import StyleFonts from "./StyleFonts";
 import StyleTheme from "./StyleTheme";
 import StyleCustomHelpers from './StyleCustomHelpers';
@@ -9,8 +9,8 @@ function StyleGlobal( props ) {
 		<React.Fragment>
 			<StyleFonts />
 			<StyleTheme />
-			<StyleVariables />
-			<StyleMain />
+			{/*<StyleVariables />*/}
+			{/*<StyleTypography />*/}
 			<StyleCustomHelpers />
 		</React.Fragment>
 	);

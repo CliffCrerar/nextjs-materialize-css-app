@@ -6,9 +6,6 @@ import PageLoader from './Layout/PageLoader'
 import FloatingButtonAction from './Layout/FloatingButtonAction'
 import Scripts from './Layout/Scripts'
 
-// Theme developer components
-// import TD_SideNav from './ThemeDeveloper/SideNav'
-
 export {
 	PageLoader,
 	StyleTheme,

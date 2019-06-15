@@ -3,13 +3,11 @@
  * @summary This is the component that controls the theming for the app
  * @author Cliff Crerar
  * Created at     : 2019-05-28 05:29:56
- * Last modified  : 2019-06-15 14:20:52
+ * Last modified  : 2019-06-15 15:32:08
  */
 import {Component} from "react";
-import fetch from "isomorphic-unfetch";
 import {themeservice, cookieservice} from "static/js/services";
 import {theme, themeNames} from 'static/lib/theme';
-import "static/scss/_1_components.scss";
 
 function confirmAlert() {
 	const r = confirm( "Page reload is required to display new theme" );
@@ -47,18 +45,15 @@ class StyleTheme extends Component {
 	};
 
 	componentWillmount() {
-
 	}
-
 	componentWillUnmount() {
 		themeservice.unsubscribe();
 	}
-
 	render() {
 		return (
 			<React.Fragment>
 				<style jsx global>{`
-					@import "static/scss/_1_components.scss";
+					
 					:root {
 						--dark-primary: ${this.state.theme[ "dark-primary-color" ]}; /* DARK PRIMARY */
 						--default-primary: ${this.state.theme[ "default-primary-color" ]}; /* LIGHT PRIMARY */
@@ -122,9 +117,6 @@ class StyleTheme extends Component {
 					}
 					.bg-divider {
 						color: var(--divider) !important;
-					}
-					.nav-wrapper a {
-						color: var(${this.state.darkNavText ? "--primary-text" : "--text-primary"});
 					}
 				`}</style>
 			</React.Fragment>

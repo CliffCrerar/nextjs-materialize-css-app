@@ -1,20 +1,14 @@
 /**
  * FLOATING BUTTON ACTION
- *
  * @summary Definition of the floating button action component
  * @author Cliff Crerar
- *
  * Created at     : 2019-05-28 01:29:22
- * Last modified  : 2019-06-04 02:58:50
+ * Last modified  : 2019-06-15 15:25:27
  */
-
 import {Component} from "react";
 import {SetThemeSelection} from "./SetSelection";
 import {themeservice, cookieservice} from "static/js/services";
 import {theme, themeNames} from 'static/lib/theme'
-//import changeTheme from 'static/js/changeTheme';
-import "static/scss/floating-button.scss";
-
 class FloatingButtonAction extends Component {
 	constructor ( props ) {
 		super( props );
@@ -37,7 +31,6 @@ class FloatingButtonAction extends Component {
 
 	activateComponentJS() {
 		var floatingBtn = document.querySelectorAll( ".fixed-action-btn" );
-
 		M.FloatingActionButton.init( floatingBtn, {} );
 	}
 
@@ -48,9 +41,7 @@ class FloatingButtonAction extends Component {
 
 	useCookiesWarn() {
 		const tapTarget = document.getElementsByClassName( "tap-target" );
-
 		const instance = M.TapTarget.getInstance( tapTarget );
-
 		instance.next();
 	}
 
@@ -60,8 +51,6 @@ class FloatingButtonAction extends Component {
 	}
 
 	componentDidUpdate(/*prevProps, prevState*/ ) {
-		//console.log('prevState: ', prevState);
-		//console.log('prevProps: ', prevProps);
 		return themeservice.update( this.state.selectedTheme );
 	}
 
@@ -73,7 +62,6 @@ class FloatingButtonAction extends Component {
 	}
 	render() {
 		console.log( "Floating button action" );
-
 		return (
 			<div className="fixed-action-btn">
 				<a

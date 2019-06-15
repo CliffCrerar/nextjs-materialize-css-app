@@ -2,7 +2,7 @@
  * GLOBAL CSS
  * @author Cliff Crerar
  * Created at     : 2019-05-23 00:05:19
- * Last modified  : 2019-06-15 14:19:06
+ * Last modified  : 2019-06-15 14:22:58
  */
 
 //import 'static/fonts/Kodchasan/stylesheet.css'
@@ -17,7 +17,7 @@ function StyledMain() {
 			}
 			html,body{
 				height: var(--vph);
-				background: 
+				
 			}
 			h1,h2,h3,h4,h5,h6{
 				font-family: Kodchasan !important;

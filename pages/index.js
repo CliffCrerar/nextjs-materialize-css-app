@@ -3,15 +3,12 @@
  * @summary This is the application index file
  * @author Cliff Crerar
  * Created at     : 2019-05-22 00:41:34
- * Last modified  : 2019-06-05 00:32:44
+ * Last modified  : 2019-06-15 15:22:21
  */
 import WithLayout from 'Layout'
-//import HomePageIndex from "components/bodies/_01_Index";
 import {HelloWorld} from "components/Boiler-Components";
-
 const PageComponent = ( props ) => {
 	console.log( "Index" );
-
 	return (
 		<main className="container position-relative mt-3">
 			<style jsx>{`
@@ -32,5 +29,4 @@ const PageComponent = ( props ) => {
 		</main>
 	);
 };
-
 export default WithLayout( PageComponent );

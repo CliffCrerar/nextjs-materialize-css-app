@@ -1,11 +1,8 @@
 /* Materialize PAGE COMPONENT */
-
 //import css from 'components/Boiler-Components/node_modules/styled-jsx/css';
-
 const styles = {
 	width: '100%'
 };
-
 const Materialize = () => {
 	return (
 		<div>

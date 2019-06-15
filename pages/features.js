@@ -4,7 +4,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-30 23:05:13
- * Last modified  : 2019-06-05 00:21:16
+ * Last modified  : 2019-06-15 15:22:08
  */
 import {Component} from "react";
 import WithLayout from 'Layout'
@@ -12,7 +12,6 @@ import ColorBlocks from 'components/Boiler-Components/Features/ColorBlocks';
 import {theme, themeNames} from 'static/lib/theme'
 import cookieservice from '../static/js/services/cookies-service';
 class PageComponent extends Component {
-
 	constructor ( props ) {
 		super( props );
 		this.selectedTheme = cookieservice.getTheme() || 'blue-deeporange';
@@ -34,12 +33,9 @@ class PageComponent extends Component {
 			</span>
 		);
 	}
-
 	/* COLOR BLOCKS */
 
-
 	/* COLOR BLOCKS */
-
 	render() {
 		const ContainerElement = props => <div>{props.content}</div>;
 		return (

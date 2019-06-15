@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-23 23:14:52 
- * Last modified  : 2019-05-30 22:29:07
+ * Last modified  : 2019-06-15 15:00:20
  */
 
 import Head from 'next/head';
@@ -28,8 +28,8 @@ const PageHead = ( {router} ) => {
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 			<title>Online Portfolio - {thisPath}</title>
 			<link key="favicon" rel="icon" href="static/favicon/favicon.ico" type="image/ico" />
-			<link rel="stylesheet" href="static/css/materialize.css" />
-			<link rel="stylesheet" href="static/css/cssradutils.css" />
+			<link rel="stylesheet" href="static/lib/css/materialize.css" />
+			<link rel="stylesheet" href="static/lib/css/mnext-rad.css" />
 		</Head>
 	)
 }

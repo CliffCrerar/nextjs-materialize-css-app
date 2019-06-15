@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-31 20:41:48
- * Last modified  : 2019-06-01 04:12:59
+ * Last modified  : 2019-06-15 15:14:54
  */
 import convertColor from 'color-convert';
 
@@ -36,7 +36,7 @@ const FloatingButtonSelectStyle = ( {selectedTheme} ) => (
 );
 
 const convertToProper = ( itm, delimiter ) => {
-	//	console.log('itm: ', itm);
+	//  console.log('itm: ', itm);
 	//let $ = delimiter;
 	//let Array = itm.split($);
 	//console.log('Array: ', Array);

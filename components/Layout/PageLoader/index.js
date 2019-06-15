@@ -11,7 +11,7 @@ function PageLoader( props ) {
 	const fixedClass = "loader-container flex-row justify-content-center align-items-center scale-transition"
 	const className = `${varClass} ${fixedClass}`
 	return (
-		<React.Fragment >
+		<React.Fragment>
 			<style jsx>{`
 				.loader-container{
 					position: fixed;
