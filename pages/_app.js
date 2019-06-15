@@ -1,5 +1,6 @@
 import React from 'react';
 import App, {Container} from 'next/app';
+import Router from 'next/router';
 
 class MaterialNextApp extends App {
 	static async getInitialProps( {Component, ctx} ) {

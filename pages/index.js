@@ -5,14 +5,15 @@
  * Created at     : 2019-05-22 00:41:34
  * Last modified  : 2019-06-05 00:32:44
  */
-import WithLayout from 'WithLayout.jsx'
+import WithLayout from 'Layout'
 //import HomePageIndex from "components/bodies/_01_Index";
 import {HelloWorldComponent} from "components/Boiler-Components";
 
 const PageComponent = ( props ) => {
 	console.log( "Index" );
+
 	return (
-		<main className="position-relative">
+		<main className="container position-relative mt-5">
 			<style jsx>{`
 				main {
 					min-height: var(--vph);

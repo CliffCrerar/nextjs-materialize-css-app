@@ -17,22 +17,35 @@ const withPlugins = require( "next-compose-plugins" );
 // Load document ready scripts
 const domReadyContent = true;
 
+// Set build directory for build and dev
+const productionBuildDirectory = "dist";
+const developmentBuildDirectory = ".next";
+const distDir = process.env.NODE_ENV === 'development' ? developmentBuildDirectory : productionBuildDirectory
+
 // Run themes file rebuild
-//buildTheme();
 
 // Plugins
 var plugins = [
 	[ withSourceMaps ],
 	[ withSass ]
 ];
-
 // Configuration
-const NextAppConfig = ( phases, {defaultconfig} ) => {
-	//console.log( 'defaultconfig: ', defaultconfig );
+const NextAppConfig = {
+	distDir,
+	target: 'server',
+	env: {
 
-	return {
-		target: 'serverless'
-	};
+	},
+	serverRuntimeConfig: {
+		// Will only be available on the server side
+		//mySecret: 'secret',
+		//secondSecret: process.env.SECOND_SECRET // Pass through env variables
+	},
+	publicRuntimeConfig: {
+		// Will be available on both server and client
+		// staticFolder: '/static'
+	},
+	pageExtensions: [ 'jsx', 'js' ],
 };
 
 // Implementations

@@ -7,7 +7,7 @@
  * Last modified  : 2019-06-05 00:21:16
  */
 import {Component} from "react";
-import WithLayout from 'WithLayout.jsx'
+import WithLayout from 'Layout'
 import ColorBlocks from 'components/Boiler-Components/Features/ColorBlocks';
 import {theme, themeNames} from 'static/lib/theme'
 import cookieservice from '../static/js/services/cookies-service';

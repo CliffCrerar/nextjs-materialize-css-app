@@ -17,7 +17,7 @@ const dirs = [
 	'static',
 	'static/lib',
 	'pages',
-	'components/Layout'
+	'components'
 ]
 
 function ProjectPaths( rootDir ) {

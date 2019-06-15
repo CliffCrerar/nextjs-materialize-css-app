@@ -9,7 +9,6 @@ import {Component} from "react";
 import fetch from "isomorphic-unfetch";
 import {themeservice, cookieservice} from "static/js/services";
 import {theme, themeNames} from 'static/lib/theme';
-
 import "static/scss/_1_components.scss";
 
 function confirmAlert() {
@@ -40,8 +39,8 @@ class StyleTheme extends Component {
 
 	componentDidMount = () => {
 		themeservice.subscribe( newtheme => {
-			//console.log( "newtheme: ", newtheme );
-			cookieservice.setTheme( newtheme, () => confirmAlert() );
+			const oldTheme = cookieservice.getTheme();
+			cookieservice.setTheme( newtheme, () => {oldTheme != newtheme && window.location.reload()} );
 		} );
 		const navBarHeight = document.getElementById( "nav-Bar" ).clientHeight;
 		document.getElementById( "nav-spacer" ).style.height = navBarHeight + "px";

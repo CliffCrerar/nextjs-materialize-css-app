@@ -8,7 +8,7 @@
  * Last modified  : 2019-06-05 00:23:34
  */
 
-import WithLayout from 'WithLayout.jsx'
+import WithLayout from 'Layout'
 import {MaterializeComponent} from "components/Boiler-Components";
 
 const PageComponent = () => (

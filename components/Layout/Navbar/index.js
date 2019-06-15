@@ -13,7 +13,7 @@ const EnumLinks = ( {brand, links} ) => {
 	const Links = links.map( ( link, i ) => {
 		return (
 			<li key={`link-${i}`}>
-				<Link href={link.href} passHref>
+				<Link href={link.href} as={link.as} prefetch>
 					<a title={link.title}>{link.caption}</a>
 				</Link>
 			</li>
@@ -56,6 +56,7 @@ function NavBar( props ) {
 				style={styles.navBar}
 			>
 				<div className="navbar-links">
+
 					<EnumLinks links={props.links} brand={props.brand} />
 				</div>
 			</nav>

@@ -6,8 +6,7 @@
  * Created at     : 2019-05-30 22:08:41
  * Last modified  : 2019-06-05 00:22:03
  */
-import WithLayout from 'WithLayout.jsx'
-import Router from 'next/router';
+import WithLayout from 'Layout'
 import {aboutData} from 'static/data';
 const PageComponent = props => (
 	<main className="container" > { /* <div>{JSON.stringify( Router )}</div> */}
