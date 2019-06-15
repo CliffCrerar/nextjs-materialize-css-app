@@ -6,7 +6,7 @@ const styles = {
 	width: "40%"
 };
 
-const ReactComponent = () => {
+const ReactComp = () => {
 	return (
 		<div>
 
@@ -60,4 +60,4 @@ const ReactComponent = () => {
 	);
 };
 
-export default ReactComponent;
+export default ReactComp;

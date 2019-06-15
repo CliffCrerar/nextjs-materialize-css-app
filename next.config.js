@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-27 23:42:06
- * Last modified  : 2019-06-03 22:32:18
+ * Last modified  : 2019-06-15 13:42:25
  */
 
 // Declarations
@@ -36,16 +36,21 @@ const NextAppConfig = {
 	env: {
 
 	},
-	serverRuntimeConfig: {
-		// Will only be available on the server side
-		//mySecret: 'secret',
-		//secondSecret: process.env.SECOND_SECRET // Pass through env variables
-	},
-	publicRuntimeConfig: {
-		// Will be available on both server and client
-		// staticFolder: '/static'
-	},
 	pageExtensions: [ 'jsx', 'js' ],
+	webpack: ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {
+		// Note: we provide webpack above so you should not `require` it
+		// Perform customizations to webpack config
+		// Important: return the modified config
+		config.module.rules.push(
+			{
+				test: /\.md$/,
+				use: 'raw-loader'
+			}
+		)
+		// Example using webpack option
+		config.plugins.push( new webpack.IgnorePlugin( /\/__tests__\// ) );
+		return config;
+	},
 };
 
 // Implementations

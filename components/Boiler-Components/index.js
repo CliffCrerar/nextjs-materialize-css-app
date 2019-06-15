@@ -1,6 +1,6 @@
-import HelloWorldComponent from './HelloWorld-component';
-import ReactComponent from './React-component';
-import MaterializeComponent from './Materialize-component';
+import HelloWorld from './HelloWorld';
+import ReactComp from './React';
+import Materialize from './Materialize';
 import ColorBlocks from './Features/ColorBlocks';
 
-export {HelloWorldComponent, ReactComponent, MaterializeComponent}
+export {HelloWorld, ReactComp, Materialize}

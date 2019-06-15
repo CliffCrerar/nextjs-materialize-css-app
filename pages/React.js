@@ -8,13 +8,13 @@
  * Last modified  : 2019-05-27 01:03:04
  */
 import WithLayout from 'Layout'
-import {ReactComponent} from "components/Boiler-Components";
+import {ReactComp} from "components/Boiler-Components";
 
 const PageComponent = () => (
 
 	<main className="container position-relative mt-5">
 		<h1 className="w-100 text-center text-default-primary headingShadow">React</h1>
-		<ReactComponent />
+		<ReactComp />
 	</main>
 );
 

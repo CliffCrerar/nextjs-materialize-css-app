@@ -9,7 +9,7 @@
  */
 
 import WithLayout from 'Layout'
-import {MaterializeComponent} from "components/Boiler-Components";
+import {Materialize} from "components/Boiler-Components";
 
 const PageComponent = () => (
 
@@ -17,7 +17,7 @@ const PageComponent = () => (
 		<h1 className="w-100 text-center text-default-primary headingShadow">
 			Materialize CSS
 		</h1>
-		<MaterializeComponent />
+		<Materialize />
 	</main>
 );
 

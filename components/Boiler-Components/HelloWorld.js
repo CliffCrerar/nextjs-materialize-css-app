@@ -14,7 +14,7 @@ const styles = css`
 	}
 `;
 
-function HelloWorldComponent() {
+function HelloWorld() {
 	return (
 		<div className="container mt-5">
 			<h1 className="text-center w-100 text-default-primary headingShadow">
@@ -82,4 +82,4 @@ function HelloWorldComponent() {
 	);
 }
 
-export default HelloWorldComponent;
+export default HelloWorld;

@@ -1,0 +1,3 @@
+{
+	"ignorePaths":["./license.txt","dist"]
+}

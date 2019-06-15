@@ -7,13 +7,13 @@
  */
 import WithLayout from 'Layout'
 //import HomePageIndex from "components/bodies/_01_Index";
-import {HelloWorldComponent} from "components/Boiler-Components";
+import {HelloWorld} from "components/Boiler-Components";
 
 const PageComponent = ( props ) => {
 	console.log( "Index" );
 
 	return (
-		<main className="container position-relative mt-5">
+		<main className="container position-relative mt-3">
 			<style jsx>{`
 				main {
 					min-height: var(--vph);
@@ -23,10 +23,10 @@ const PageComponent = ( props ) => {
 					top: 40%;
 					transform: translateY(-50%);
 				}
-	  		`}
+	        `}
 			</style>
 			<div className="custom-position-1">
-				<HelloWorldComponent title={props.pageTitle} />
+				<HelloWorld title={props.pageTitle} />
 				{/* <HomePageIndex pageContent={pageContent} /> */}
 			</div>
 		</main>

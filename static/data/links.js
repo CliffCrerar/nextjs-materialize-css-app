@@ -29,4 +29,10 @@ module.exports = [
 		title: 'Features',
 		as: "features"
 	},
+	{
+		href: '/documents',
+		caption: 'Documents',
+		title: 'Documents',
+		as: 'documents'
+	}
 ];
