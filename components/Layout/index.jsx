@@ -20,12 +20,13 @@ import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts, Footer, Pa
 const WithLayout = PageComponent => {
 	console.log( 'Layout' );
 
-	return () => {
+	return ( props ) => {
+		{console.log( 'props: ', props );}
 		const [ count, setCount ] = useState( 0 );
 		return (
 			<React.Fragment>
 				<PageHead />
-				<StyleGlobal />
+				<StyleGlobal themeFromCookies={props.theme} />
 				<NavBar />
 				{/*<PageLoader />*/}
 				<PageComponent />

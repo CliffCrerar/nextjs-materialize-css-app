@@ -8,6 +8,7 @@
 import WithLayout from 'Layout'
 import {HelloWorld} from "components/Boiler-Components";
 const PageComponent = ( props ) => {
+	console.log( 'props: ', props );
 	console.log( "Index" );
 	return (
 		<main className="container position-relative mt-3">

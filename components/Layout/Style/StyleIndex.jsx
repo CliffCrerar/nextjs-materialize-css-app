@@ -9,10 +9,11 @@ import 'static/lib/scss/mnext-variables.scss';
 import 'static/lib/scss/mnext-theme-mutator.scss';
 
 function StyleGlobal( props ) {
+	console.log( 'props: ', props );
 	return (
 		<React.Fragment>
 			<StyleFonts />
-			<StyleTheme />
+			<StyleTheme themeFromCookies={props.themeFromCookies} />
 		</React.Fragment>
 	);
 }
