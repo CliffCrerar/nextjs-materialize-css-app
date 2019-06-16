@@ -9,7 +9,7 @@
  */
 
 const Footer = ( props ) => (
-	<footer className="page-footer">
+	<footer className="page-footer mt-5">
 		<div className="container">
 			<div className="row">
 				<div className="col l6 s12">
@@ -30,8 +30,10 @@ const Footer = ( props ) => (
 		<div className="footer-copyright">
 			<div className="container">
 				© 2014 Copyright Text
-	  <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+	  			<a className="grey-text text-lighten-4 right" href="#!">More Links</a>
 			</div>
 		</div>
 	</footer>
 )
+
+export default Footer;

@@ -24,7 +24,7 @@ const ReactComp = () => {
 			<hr />
 			<div className="mt-3 d-flex flex-xl-row justify-content-around">
 				<div className="custom-width">
-					<h5 className="text-secondary">Declarative</h5>
+					<h5 className="text-secondary mnext">Declarative</h5>
 					<p className="text-justify">
 						React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
 					</p>
@@ -33,7 +33,7 @@ const ReactComp = () => {
 					</p>
 				</div>
 				<div className="custom-width">
-					<h5 className="text-secondary">Component-Based</h5>
+					<h5 className="text-secondary mnext">Component-Based</h5>
 					<p className="text-justify">
 						Build encapsulated components that manage their own state, then compose them to make complex UIs.
 					</p>
@@ -42,7 +42,7 @@ const ReactComp = () => {
 					</p>
 				</div>
 				<div className="custom-width">
-					<h5 className="text-secondary">Learn Once, Write Anywhere</h5>
+					<h5 className="text-secondary mnext">Learn Once, Write Anywhere</h5>
 					<p className="text-justify">
 						We don’t make assumptions about the rest of your technology stack, so you can develop new features in React without rewriting existing code.
 					</p>

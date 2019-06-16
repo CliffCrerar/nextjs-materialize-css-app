@@ -8,7 +8,7 @@
  * Last modified  : 2019-06-03 01:03:18
  */
 import React, {useState} from 'react';
-import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts, PageLoader} from 'components';
+import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts, Footer, PageLoader} from 'components';
 // import Router from 'next/router';
 // console.log( 'Router: ', Router );
 
@@ -16,7 +16,6 @@ import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts, PageLoader
 // Router.events.on( 'routeChangeStart', ( ev ) => console.log( "routeChangeStart", ev ) );
 // Router.events.on( 'routeChangeComplete', ( ev ) => routing( "routeChangeComplete", ev ) );
 // Router.events.on( 'routeChangeError', ( ev ) => routing( "routeChangeError", ev ) );
-
 
 const WithLayout = PageComponent => {
 	console.log( 'Layout' );
@@ -32,6 +31,7 @@ const WithLayout = PageComponent => {
 				<PageComponent />
 				<FloatingButtonAction />
 				<Scripts />
+				<Footer />
 			</React.Fragment >
 		)
 	};

@@ -5,6 +5,7 @@ import NavBar from './Layout/Navbar'
 import PageLoader from './Layout/PageLoader'
 import FloatingButtonAction from './Layout/FloatingButtonAction'
 import Scripts from './Layout/Scripts'
+import Footer from './Layout/Footer'
 
 export {
 	PageLoader,
@@ -13,6 +14,6 @@ export {
 	Scripts,
 	PageHead,
 	NavBar,
-	FloatingButtonAction
-
+	FloatingButtonAction,
+	Footer
 }
