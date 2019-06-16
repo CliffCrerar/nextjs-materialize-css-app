@@ -41,7 +41,7 @@ class PageComponent extends Component {
 		return (
 			<main className="container">
 				<h1 className="text-default-primary text-center mt-5 mb-3 headingShadow">
-					Color Themes
+					Features
 				</h1>
 				<ContainerElement content={ColorBlocks( this.styleVars, this.themeName, this.props.currentTheme, this.props.theme )} />
 			</main>

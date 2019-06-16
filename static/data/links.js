@@ -31,8 +31,8 @@ module.exports = [
 	},
 	{
 		href: '/documents',
-		caption: 'Documents',
-		title: 'Documents',
-		as: 'documents'
+		caption: 'Getting Started',
+		title: 'Getting-Started',
+		as: 'getting-started'
 	}
 ];

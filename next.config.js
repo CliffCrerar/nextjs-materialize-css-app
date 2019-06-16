@@ -52,7 +52,7 @@ const NextAppConfig = {
 		return config;
 	},
 };
-
+console.log( 'NextAppConfig: ', NextAppConfig );
 // Implementations
 domReadyContent && ( process.env.DOM_CONTENT_LOAD = true );
 

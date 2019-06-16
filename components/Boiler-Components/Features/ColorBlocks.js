@@ -1,5 +1,6 @@
 import Helpers from './Helpers';
-import Typography from './Typography';
+import AdditionalClasses from './AdditionalClasses/AdditionalClasses';
+import BootstrapUtilities from './bootstrap-utilities';
 const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
 	const colorBlocks = arr.map( ( sVar, i ) => {
 		// console.log( "sVar: ", sVar );
@@ -38,7 +39,9 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
         }
       `}</style>
 			<div>
+
 				<div className="card-panel">
+					<p className="flow-text">This page shows all features you can expect in this boiler.</p>
 					<h3 className="text-center mb-3">{themeName( currentTheme )}</h3>
 					<div className="w-auto text-center color-grid border">
 						{colorBlocks}
@@ -49,7 +52,7 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
             backgrounds and this can be achieved by either prefixing{" "}
 						<code className="bg-light-primary round-1">text-</code> ,or by
             prefixing <code className="bg-light-primary round-1">bg-</code> to
-																																																			the names in the color blocks seen above.
+																																																																																										the names in the color blocks seen above.
           </p>
 					<p>Below please see the available options:</p>
 					<div className="d-flex flex-row">
@@ -135,26 +138,12 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
             </p>
 						{/* <iframe src="https://www.materialpalette.com/"></iframe> */}
 					</div>
-					<div>
-						<h4 className="text-accent mt-3 mb-2 ">Bootstrap Utilities</h4>
-						<p className="text-justify">
-							We have included in this library all the goodness of what Bootstrap has to offer, leaving out all the stuff that used to be nice, but is not so nice any longer.
-							<br />
-							<br />
-							The great thing about Bootstrap 4 is that it provided all kinds of helper classes to which were just CSS classes pre scripted to help you have a better coding experience, so that you don't have to waste time to go and create a css class when you wanted add margin or padding, or just centering text.
-							<br />
-							<br />
-							If you are not familiar with what we are saying here or need a reference please follow this link the <a href="https://getbootstrap.com/docs/4.1/utilities">Bootstrap 4 library utilities section</a>;
-						</p>
-					</div>
-					<Typography />
-					<h4 className="text-accent mt-3 mb-2 ">Additional Helper Classes</h4>
-					<p className="text-justify">
-						Materialize CSS library has their own set of helper classes that are included but these classes have been excluded to not conflict with the Bootstrap 4 utility classes.
-							<br />
-						<br />
-						Then there are some custom classes that have been added to make up for where bootstrap leaves of, this is a catalogue of helper classes added to supplement the bootstrap helpers.
-					</p>
+
+
+
+					<BootstrapUtilities />
+					<h4 className="text-accent mt-3 mb-2 ">Additional CSS Classes</h4>
+					<AdditionalClasses />
 					<Helpers />
 				</div>
 			</div>
