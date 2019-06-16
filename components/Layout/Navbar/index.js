@@ -9,60 +9,57 @@
 import Link from "next/link";
 import {brand, links} from 'static/data';
 
-const EnumLinks = ( {brand, links} ) => {
-	const Links = links.map( ( link, i ) => {
-		return (
-			<li key={`link-${i}`}>
-				<Link href={link.href} as={link.as} prefetch>
-					<a title={link.title}>{link.caption}</a>
-				</Link>
-			</li>
-		);
-	} );
-	return (
-		<div className="nav-wrapper pl-5">
-			<img className="img-fluid mt-1" src="static/img/cc-logo-flat.png" />
-			<a href="#" className="brand-logo ml-2">
-				<span className="ml-1 mr-2 font-weight-bolder">
-					{brand.brand.mainText}
-				</span>
-				<span className="text-accent font-weight-bold">
-					{brand.brand.accentText}
-				</span>
-			</a>
-			<ul id="nav-mobile" className="right hide-on-med-and-down mr-5">
-				{Links}
-			</ul>
-		</div>
-	);
-};
-const styles = {
-	navBar: {background: "var(--dark-primary)"}
-};
+// Navbar
+const BavBarBrand = ( props ) => (
+	// {console.log( props )}
+	< div className="nav-wrapper pl-5" >
+		<img className="img-fluid mt-1" src="static/img/cc-logo-flat.png" />
+		<a href="#" className="brand-logo ml-2">
+			<span className="ml-1 mr-2 font-weight-bolder">
+				{brand.brand.mainText}
+			</span>
+			<span className="text-accent font-weight-bold">
+				{brand.brand.accentText}
+			</span>
+		</a>
+		<ul id="nav-mobile" className="right hide-on-med-and-down mr-5">
+			{props.children}
+		</ul>
+	</div >
+);
+// Link template
+const NavLink = ( {link} ) => (
+	<li>
+		<Link href={link.href} as={link.as} prefetch>
+			<a title={link.title}>{link.caption}</a>
+		</Link>
+	</li> )
+
+// main
 function NavBar( props ) {
-	//console.log( 'props: ', props );
-	//console.log( "NAVBAR:", this );
-	//const navHeight =
-	//console.log("navHeight: ", navHeight);
-	//console.log( 'props NAV: ', props );
+	const styles = {
+		navBar: {background: "var(--dark-primary)"}
+	};
 	return (
 		<React.Fragment>
 			<div id="nav-spacer" />
 			<nav
 				id="nav-Bar"
 				className="navBar fixed-top"
-				style={styles.navBar}
-			>
+				style={styles.navBar}>
 				<div className="navbar-links">
-
-					<EnumLinks links={props.links} brand={props.brand} />
+					<BavBarBrand brand={brand}>
+						<NavLink link={props.links[ 0 ]} />
+						<NavLink link={props.links[ 1 ]} />
+						<NavLink link={props.links[ 2 ]} />
+						<NavLink link={props.links[ 3 ]} />
+						<NavLink link={props.links[ 4 ]} />
+						<NavLink link={props.links[ 5 ]} />
+					</BavBarBrand>
 				</div>
 			</nav>
-			{/* {props.setNavSpacer()} */}
-		</React.Fragment>
-	);
+		</React.Fragment> );
 };
-
 
 NavBar.defaultProps = {
 	brand: brand,

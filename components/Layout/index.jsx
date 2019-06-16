@@ -19,7 +19,7 @@ import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts, PageLoader
 
 
 const WithLayout = PageComponent => {
-	console.log( 'App' );
+	console.log( 'Layout' );
 
 	return () => {
 		const [ count, setCount ] = useState( 0 );

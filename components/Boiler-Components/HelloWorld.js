@@ -1,5 +1,6 @@
 /* BOILER COMPONENT */
-import css from "styled-jsx/css";
+
+import {css} from 'styled-jsx/css';
 const styles = css`
 	.bs4-logo {
 		transform: scale(1);
