@@ -1,0 +1,10 @@
+_stash
+.next
+node_modules
+dist
+.vscode
+react-boilers.code-workspace
+cspell.json
+.eslintrc
+.eslintignore
+.editorconfig
