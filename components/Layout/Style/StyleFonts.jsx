@@ -16,25 +16,27 @@ const StyleFonts = () => {
 	return (
 		<React.Fragment>
 			<style jsx global>{`
-		@import 'static/fonts/Kodchasan/stylesheet.css';
-		@import 'static/fonts/Montserrat/stylesheet.css';
-		@import 'static/lib/material-icons/material-icons.css';
-		@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+				@import 'static/fonts/Kodchasan/stylesheet.css';
+				@import 'static/fonts/Roboto/stylesheet.css';
+				@import 'static/fonts/Lobster/stylesheet.css';
+				@import 'static/fonts/Montserrat/stylesheet.css';
+				@import 'static/lib/material-icons/material-icons.css';
+				@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
 
-		html{
-			font-family: ${contentFont} !important;
-		}
+				html{
+					font-family: ${contentFont} !important;
+				}
 
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: ${headingsFont} !important;
-		}
-		
-	`}</style>
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					font-family: ${headingsFont} !important;
+				}
+				
+			`}</style>
 		</React.Fragment>
 	)
 };

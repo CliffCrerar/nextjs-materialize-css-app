@@ -9,7 +9,6 @@ import 'static/style/lib/mnext-variables.scss';
 import 'static/style/lib/mnext-theme-mutator.scss';
 
 function StyleGlobal( props ) {
-	console.log( 'props: ', props );
 	return (
 		<React.Fragment>
 			<StyleFonts />
