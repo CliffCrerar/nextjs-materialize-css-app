@@ -10,7 +10,7 @@ import {Component} from "react";
 import WithLayout from 'Layout'
 import ColorBlocks from 'components/Boiler-Components/Features/ColorBlocks';
 import {theme, themeNames} from 'static/lib/theme'
-import cookieservice from '../static/js/services/cookies-service';
+import cookieservice from 'static/js/services/cookies-service';
 class PageComponent extends Component {
 	constructor ( props ) {
 		super( props );

@@ -14,4 +14,4 @@ const HomePageIndex = ( {pageContent} ) => {
 		</React.Fragment>
 	)
 }
-export default HomePageIndex;
+export default Landing;

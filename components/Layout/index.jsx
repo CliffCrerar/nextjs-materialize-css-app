@@ -1,14 +1,12 @@
 /**
- * MAIN APP
- *
+ * App Layout module
  * @summary The main application file
  * @author Cliff Crerar
- *
  * Created at     : 2019-05-22 00:49:06
  * Last modified  : 2019-06-03 01:03:18
  */
 import React, {useState} from 'react';
-import {StyleGlobal, PageHead, NavBar, FloatingButtonAction, Scripts, Footer, PageLoader} from 'components';
+import {StyleGlobal, PageHead, NavBar, ActionButton, Scripts, Footer, PageLoader} from 'components';
 // import Router from 'next/router';
 // console.log( 'Router: ', Router );
 
@@ -30,7 +28,7 @@ const WithLayout = PageComponent => {
 				<NavBar />
 				{/*<PageLoader />*/}
 				<PageComponent />
-				<FloatingButtonAction />
+				<ActionButton />
 				<Scripts />
 				<Footer />
 			</React.Fragment >

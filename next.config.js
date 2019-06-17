@@ -19,9 +19,8 @@ const withPlugins = require( "next-compose-plugins" );
 const domReadyContent = true;
 
 // Set build directory for build and dev
-const productionBuildDirectory = "dist";
-const developmentBuildDirectory = ".next";
-const distDir = process.env.NODE_ENV === 'development' ? developmentBuildDirectory : productionBuildDirectory
+const distributionBuildDirectory = ".next";
+const distDir = distributionBuildDirectory
 
 // Run themes file rebuild
 
@@ -33,7 +32,7 @@ var plugins = [
 // Configuration
 const NextAppConfig = {
 	distDir,
-	target: 'serverless',
+	target: 'server',
 	env: {
 		temp_secret: 'temp'
 	},
