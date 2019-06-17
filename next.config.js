@@ -13,22 +13,15 @@ require( "./config" );
 const withSourceMaps = require( "@zeit/next-source-maps" );
 const withSass = require( "@zeit/next-sass" );
 const withPlugins = require( "next-compose-plugins" );
-// Set default theme name
-const defaultThemeName = "blue-deeporange"
-// Load document ready scripts
-const domReadyContent = true;
-// Set build directory for build and dev
-const distributionBuildDirectory = ".next";
+const defaultThemeName = "blue-deeporange" // Set default theme name
+const distributionBuildDirectory = ".next"; // Set build directory for build and dev
 const distDir = distributionBuildDirectory
 // Run themes file rebuild
-
-// Plugins
 var plugins = [
 	[ withSourceMaps ],
 	[ withSass ]
-];
-// Configuration
-const NextAppConfig = {
+]; // Plugins
+const NextAppConfig = { // Configuration
 	distDir,
 	target: 'server',
 	env: {
@@ -40,12 +33,7 @@ const NextAppConfig = {
 		// Note: we provide webpack above so you should not `require` it
 		// Perform customizations to webpack config
 		// Important: return the modified config
-		config.module.rules.push(
-			{
-				test: /\.md$/,
-				use: 'raw-loader'
-			}
-		)
+		config.module.rules.push( {test: /\.md$/, use: 'raw-loader'} );
 		// Example using webpack option
 		config.plugins.push( new webpack.IgnorePlugin( /\/__tests__\// ) );
 		return config;
