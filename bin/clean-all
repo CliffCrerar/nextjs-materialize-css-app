@@ -3,5 +3,6 @@ echo "Clean Builds"
 sudo rm -rd .next
 sudo rm -rd dist
 sudo rm -rd node_modules
+sudo rm package-lock.json
 
 npm install

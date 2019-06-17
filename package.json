@@ -15,7 +15,7 @@
         "clean-dev": "./bin/clean",
         "deploy-test": "./bin/deploy-test",
         "deploy": "./bin/deploy",
-        "now-build": "next build && next export -o dist"
+        "now-build": "next build"
     },
     "repository": {
         "type": "git",
