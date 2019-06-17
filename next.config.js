@@ -9,22 +9,17 @@
  */
 
 // Declarations
-const nodePath = require( "./config" );
-
+require( "./config" );
 const withSourceMaps = require( "@zeit/next-source-maps" );
 const withSass = require( "@zeit/next-sass" );
 const withPlugins = require( "next-compose-plugins" );
-
 // Set default theme name
 const defaultThemeName = "blue-deeporange"
-
 // Load document ready scripts
 const domReadyContent = true;
-
 // Set build directory for build and dev
 const distributionBuildDirectory = ".next";
 const distDir = distributionBuildDirectory
-
 // Run themes file rebuild
 
 // Plugins
@@ -56,8 +51,6 @@ const NextAppConfig = {
 		return config;
 	},
 };
-console.log( 'NextAppConfig: ', NextAppConfig );
 // Implementations
-domReadyContent && ( process.env.DOM_CONTENT_LOAD = true );
-
+// domReadyContent && ( process.env.DOM_CONTENT_LOAD = true );
 module.exports = withPlugins( plugins, NextAppConfig );
