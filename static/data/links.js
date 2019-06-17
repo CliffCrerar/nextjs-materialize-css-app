@@ -34,5 +34,13 @@ module.exports = [
 		caption: 'Getting Started',
 		title: 'Getting-Started',
 		as: 'getting-started'
+	},
+	// TEST
+	{
+		href: '/mdtest',
+		caption: 'mdtest',
+		title: 'mdtest',
+		as: 'mdtest'
 	}
+	// TEST
 ];

@@ -28,6 +28,8 @@
     },
     "homepage": "https://github.com/CliffCrerar/nextjs-materialize-css-app#readme",
     "dependencies": {
+        "@mdx-js/loader": "^1.0.20",
+        "@next/mdx": "^8.1.0",
         "@zeit/next-sass": "^1.0.1",
         "@zeit/next-source-maps": "0.0.3",
         "color-convert": "^2.0.0",

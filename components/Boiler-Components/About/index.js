@@ -1,5 +1,7 @@
 /* BOILER COMPONENT */
 import {aboutData} from 'static/data';
+import ReactMarkdown from 'react-markdown';
+import aboutContent from './about.md'
 const About = () => (
 	<React.Fragment>
 		<h1 className="w-100 text-center text-default-primary mt-5 mb-3 headingShadow">{aboutData.title} </h1>
@@ -18,6 +20,9 @@ const About = () => (
 		<p className="text-justify mb-2 mt-3">{aboutData.par3}</p>
 		<p className="text-justify mb-2 mt-3">{aboutData.par4}</p>
 		<p className="text-justify mb-2 mt-3">{aboutData.par5}</p>
+		<div>
+			<ReactMarkdown source={aboutContent} />
+		</div>
 	</React.Fragment>
 )
 

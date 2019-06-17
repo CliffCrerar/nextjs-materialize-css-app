@@ -55,6 +55,7 @@ function NavBar( props ) {
 						<NavLink link={props.links[ 3 ]} />
 						<NavLink link={props.links[ 4 ]} />
 						<NavLink link={props.links[ 5 ]} />
+						<NavLink link={props.links[ 6 ]} />
 					</BavBarBrand>
 				</div>
 			</nav>

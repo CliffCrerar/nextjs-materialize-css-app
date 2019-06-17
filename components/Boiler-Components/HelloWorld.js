@@ -12,15 +12,30 @@ const styles = css`
 		color: var(--bs4Purple);
 	}
 `;
+
+const mdHeading = css`
+	.markdown-heading{
+		display: inline-block !important;  
+
+	}
+	.markdown-heading img,
+	.markdown-heading h4
+	{
+		display: inline;
+		vertical-align: middle;
+		/* display: inline-block;
+		 */
+	}
+`;
 function HelloWorld() {
 	return (
 		<div className="container mt-5">
+			<style jsx>{styles}</style>
+			<style jsx>{mdHeading}</style>
 			<h1 className="text-center w-100 text-default-primary headingShadow">
 				Material <span className="text-accent">Next</span>
 			</h1>
 			<div className="d-flex flex-row justify-content-evenly mt-2 align-items-center">
-				<style jsx>{styles}</style>
-
 				<div className="w-25 p-2">
 					<a href="https://nextjs.org/">
 						<img
@@ -72,8 +87,18 @@ function HelloWorld() {
 			<h4 className="text-center mt-3 mb-3">
 				Next.js <span className="text-divider">|</span> Bootstrap 4 utility <span className="text-divider">|</span> React <span className="text-divider">|</span> Materialize CSS
 			</h4>
+
+
+
+			<p className="text-center">with</p>
+
+			<div className="markdown-heading  w-100 text-center">
+				<img className="img-fluid" src="static/img/markdown-fp-small.png" alt="Markdown" />
+				<h4 className="mx-2">Markdown</h4>
+			</div>
+
 			<hr />
-			<h5 className="mt-3  text-center">
+			<h5 className="mt-3 text-center">
 				<i className="text-secondary">The best of front end, all in one</i>
 			</h5>
 		</div>

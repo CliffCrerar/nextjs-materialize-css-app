@@ -16,6 +16,9 @@ const PageComponent = ( props ) => (
 			}
 		`}
 		</style>
+		<div>
+			Another element
+		</div>
 
 		<div className="container mt-5">
 			<ReactMarkdown source={readMe} />

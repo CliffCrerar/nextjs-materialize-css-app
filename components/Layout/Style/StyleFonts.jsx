@@ -8,19 +8,35 @@
  * Last modified  : 2019-06-04 22:48:00
  */
 
+import css from 'styled-jsx/css';
+
+const fonts = css`
+	@import 'static/fonts/Kodchasan/stylesheet.css';
+	@import 'static/fonts/Roboto/stylesheet.css';
+	@import 'static/fonts/Lobster/stylesheet.css';
+	@import 'static/fonts/Montserrat/stylesheet.css';
+	@import 'static/fonts/Fira-Mono/stylesheet.css';
+	@import 'static/lib/material-icons/material-icons.css';
+	@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+`
+
 const StyleFonts = () => {
 	var
 		headingsFont = 'Kodchasan',
-		contentFont = 'Montserrat';
+		contentFont = 'Montserrat',
+		codeFont = 'Fira-Mono'
+
+	//static/fonts/Kodchasan
 
 	return (
 		<React.Fragment>
 			<style jsx global>{`
-				@import 'static/fonts/Kodchasan/stylesheet.css';
-				@import 'static/fonts/Roboto/stylesheet.css';
-				@import 'static/fonts/Lobster/stylesheet.css';
-				@import 'static/fonts/Montserrat/stylesheet.css';
-				@import 'static/lib/material-icons/material-icons.css';
+				@import url('static/fonts/Kodchasan/stylesheet.css');
+				@import url('static/fonts/Roboto/stylesheet.css');
+				@import url('static/fonts/Lobster/stylesheet.css');
+				@import url('static/fonts/Montserrat/stylesheet.css');
+				@import url('static/fonts/Fira-Mono/stylesheet.css');
+				@import url('static/lib/material-icons/material-icons.css');
 				@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
 
 				html{
@@ -35,6 +51,12 @@ const StyleFonts = () => {
 				h6 {
 					font-family: ${headingsFont} !important;
 				}
+
+				code{
+					font-family: ${codeFont} !important;
+				}
+
+				p, a, div 
 				
 			`}</style>
 		</React.Fragment>
