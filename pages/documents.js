@@ -7,7 +7,7 @@
  */
 import WithLayout from 'Layout';
 import ReactMarkdown from 'react-markdown';
-import readMe from 'README.md';
+import readMe from 'Readme.md';
 const PageComponent = ( props ) => (
 	<React.Fragment>
 		<style jsx>{`

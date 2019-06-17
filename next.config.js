@@ -32,7 +32,7 @@ var plugins = [
 // Configuration
 const NextAppConfig = {
 	distDir,
-	target: 'server',
+	target: 'serverless',
 	env: {
 		temp_secret: 'temp'
 	},
