@@ -15,6 +15,9 @@ const withSourceMaps = require( "@zeit/next-source-maps" );
 const withSass = require( "@zeit/next-sass" );
 const withPlugins = require( "next-compose-plugins" );
 
+// Set default theme name
+const defaultThemeName = "blue-deeporange"
+
 // Load document ready scripts
 const domReadyContent = true;
 
@@ -32,9 +35,10 @@ var plugins = [
 // Configuration
 const NextAppConfig = {
 	distDir,
-	target: 'serverless',
+	target: 'server',
 	env: {
-		temp_secret: 'temp'
+		temp_secret: 'temp',
+		DEFAULT_THEME: defaultThemeName
 	},
 	pageExtensions: [ 'jsx', 'js' ],
 	webpack: ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {

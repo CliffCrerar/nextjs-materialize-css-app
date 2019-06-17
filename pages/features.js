@@ -11,11 +11,14 @@ import WithLayout from 'Layout'
 import ColorBlocks from 'components/Boiler-Components/Features/ColorBlocks';
 import {theme, themeNames} from 'static/lib/theme'
 import cookieservice from 'static/js/services/cookies-service';
+
 class PageComponent extends Component {
 	constructor ( props ) {
 		super( props );
+		console.log( 'props: ', props );
+
 		this.selectedTheme = cookieservice.getTheme() || 'blue-deeporange';
-		this.styleVars = Object.entries( theme[ this.selectedTheme ] );
+		this.styleVars = Object.entries( this.props.theme[ this.currentTheme || process.env.DEFAULT_THEME ] );
 	}
 
 	componentDidMount() {

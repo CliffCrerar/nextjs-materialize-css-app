@@ -30,9 +30,16 @@ The project comes with 3 standard themes:
 ---
 #### TODO
 
-* Some content on the features page.
-* Footer
-* Data retrieval makeshift setup
+   1. Some content on the features page.
+   1. Footer
+   1. Data retrieval makeshift setup
+   1. Explain the dedicated
+   1. Explain Default components
+   1. Explain Static Data
+   1. Explain now config
+   1. Explain services
+   1. Split and refactor features page
+   1. Explaing Changing fonts
 
 ---
 ##### HOW TO RUN
@@ -75,15 +82,7 @@ Create new themes by placing `.css` files creates with [material design pallete]
 
 This has comes out of the box with all 3 of the above, no additional configuration required. It already uses a mix of the 3, you may obviously apply your own discretion as yo which one you prefer.
 
-TODO ## Explain the dedicated 
 
-TODO ## Explain Default components
-
-TODO ## Explain Static Data
-
-TODO ## Explain now config
-
-TODO ## Explain services
 
 ---
 ### License 

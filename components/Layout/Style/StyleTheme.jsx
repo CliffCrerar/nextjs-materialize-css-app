@@ -8,7 +8,7 @@
 import {Component} from "react";
 import {themeservice, cookieservice} from "static/js/services";
 import {theme, themeNames} from 'static/lib/theme';
-
+const defaultTheme = process.env.DEFAULT_THEME;
 function confirmAlert() {
 	const r = confirm( "Page reload is required to display new theme" );
 	console.log( "r: ", r );
@@ -16,11 +16,13 @@ function confirmAlert() {
 		window.location.reload();
 	}
 }
+
+process.env.NODE_ENV === 'development' && console.log( 'THEME IN COOKIE:', cookieservice.getTheme() );
 class StyleTheme extends Component {
 	constructor ( props ) {
 		super( props );
 		this.state = {
-			theme: theme[ cookieservice.getTheme() || 'blue-deeporange' ],
+			theme: this.setStyleTheme(),
 			themeFb: {
 				[ "dark-primary-color" ]: "#1976D2",
 				[ "default-primary-color" ]: "#2196F3",
@@ -33,6 +35,13 @@ class StyleTheme extends Component {
 			},
 			darkNavText: false
 		};
+	}
+
+	setStyleTheme() {
+		const allThemes = theme;
+		const themeInCookie = cookieservice.getTheme();
+		const setTheme = allThemes[ themeInCookie ];
+		return setTheme === undefined ? allThemes[ defaultTheme ] : allThemes[ themeInCookie ];
 	}
 
 	componentDidMount = () => {
@@ -50,6 +59,7 @@ class StyleTheme extends Component {
 		themeservice.unsubscribe();
 	}
 	render() {
+		if ( this.state.theme === undefined ) this.setState( {theme: theme[ 'blue-deeporange' ]} );
 		return (
 			<React.Fragment>
 				<style jsx global>{`
@@ -116,7 +126,8 @@ class StyleTheme extends Component {
 					}
 					.bg-divider {
 						color: var(--divider) !important;
-					}
+					}import { cookieservice } from 'static/js/services/cookies-service';
+
 				`}</style>
 			</React.Fragment>
 		);

@@ -29,13 +29,14 @@ module.exports = () => {
 	// declare variables
 	const
 		themesOBJ = {},
-		showLoops = dev,
+		showLoops = false,
 		relColorSchemeDir = './colors',
 		getCWD = ( fName ) => path.join( relColorSchemeDir, ( fName === undefined ? '' : fName ) ),
 		readFiles = fs.readdirSync( './colors' );
+	var i = 0;
 	// Start procedure
 	showLoops && console.log( 'start loop 1' );
-	for ( let i = 0; i < readFiles.length; i++ ) {
+	for ( i; i < readFiles.length; i++ ) {
 		if (
 			path.extname( getCWD( readFiles[ i ] ) ) === '.css' &&
 			![ 'resulting-file.css' ].includes( readFiles[ i ] )
@@ -47,9 +48,10 @@ module.exports = () => {
 		}
 	}
 	showLoops && console.log( 'end loop 1' );
-	//showLoops && console.log(themesOBJ, process.cwd());
+	// Finish by writing themes to file
 	return ( async () => {
 		ut.log( '|> THEMES BUILT' );
+		ut.log( '|> THEME COUNT: ', i );
 		await fs.writeFile( __dirname + '/themes.json', JSON.stringify( themesOBJ ), ( err ) => {
 			ut.log( '|> WRITE OUT THEME NAMES' );
 			if ( err ) throw err;

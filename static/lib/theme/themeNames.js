@@ -14,6 +14,8 @@ const file = fs.existsSync( require( 'path' ).join( __dirname, './themes.json' )
 
 module.exports = () => {
 	if ( !file ) {console.log( 'Themenames not writin' ); return;}
-	console.log( JSON.stringify( Object.entries( file ).map( e => e[ 0 ] ) ) );
-	return fs.writeFileSync( require( 'path' ).join( __dirname, 'themeNames.json' ), JSON.stringify( Object.entries( file ).map( e => e[ 0 ] ) ) );
+	//console.log( JSON.stringify( Object.entries( file ).map( e => e[ 0 ] ) ) );
+	console.log( '\n|-------------------THEME NAMES---------------------|' );
+	fs.writeFileSync( require( 'path' ).join( __dirname, 'themeNames.json' ), JSON.stringify( Object.entries( file ).map( e => {console.log( '|', e[ 0 ] ); return e[ 0 ]} ) ) );
+	return console.log( '|-------------------THEME NAMES---------------------|' );
 }

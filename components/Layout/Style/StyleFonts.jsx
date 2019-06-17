@@ -8,15 +8,35 @@
  * Last modified  : 2019-06-04 22:48:00
  */
 
-const StyleFonts = () => (
-	<React.Fragment>
-		<style jsx global>{`
+const StyleFonts = () => {
+	var
+		headingsFont = 'Kodchasan',
+		contentFont = 'Montserrat';
+
+	return (
+		<React.Fragment>
+			<style jsx global>{`
 		@import 'static/fonts/Kodchasan/stylesheet.css';
 		@import 'static/fonts/Montserrat/stylesheet.css';
 		@import 'static/lib/material-icons/material-icons.css';
 		@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+
+		html{
+			font-family: ${contentFont} !important;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: ${headingsFont} !important;
+		}
+		
 	`}</style>
-	</React.Fragment>
-);
+		</React.Fragment>
+	)
+};
 
 export default StyleFonts;
