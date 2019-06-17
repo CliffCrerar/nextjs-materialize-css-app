@@ -3,7 +3,7 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2019-05-27 23:58:19 
- * Last modified  : 2019-06-17 23:08:40
+ * Last modified  : 2019-06-17 23:27:39
  */
 
 const
@@ -19,13 +19,18 @@ const dirs = [
 	'components'
 ]
 
-function ProjectPaths( rootDir ) {
-	let node_path = [ `${rootDir}${x}` ];
-	for ( let i = 0; i < dirs.length; i++ ) {
-		let thisPath = `${rootDir}${dirs[ i ]}${x}`
-		node_path.push( thisPath );
+function getNodePathAsync() {
+	function ProjectPaths( rootDir ) {
+		let node_path = [ `${rootDir}${x}` ];
+		for ( let i = 0; i < dirs.length; i++ ) {
+			let thisPath = `${rootDir}${dirs[ i ]}${x}`
+			node_path.push( thisPath );
+		}
+		return node_path.join( '' );
 	}
-	return node_path.join( '' );
+	//ut.log( 'NODE_PATH: ', ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() ) );
+	process.env.NODE_PATH = ProjectPaths( path.join( __dirname, '../../' ).toString().trim() );
+	return process.env.NODE_PATH;
 }
-//ut.log( 'NODE_PATH: ', ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() ) );
-return ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() )
+
+module.exports = getNodePathAsync();

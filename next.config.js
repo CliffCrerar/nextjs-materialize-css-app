@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-05-27 23:42:06
- * Last modified  : 2019-06-17 23:11:08
+ * Last modified  : 2019-06-17 23:28:32
  */
 
 // Declarations
@@ -27,12 +27,8 @@ const
 		},
 		pageExtensions: [ 'js', 'jsx', 'md', 'mdx' ],
 		webpack: ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {
-			process.env.NODE_PATH = nodePath.toString();
-			console.log( `\n|> DISPLAY NODE PATH:
-			\n|---------------------------------------------------------------------------|\n
-			${process.env.NODE_PATH}
-			\n|---------------------------------------------------------------------------|\n
-			`);
+			console.log( "Node Path: ", process.env.NODE_PATH, '\n' );
+
 			// Note: we provide webpack above so you should not `require` it
 			// Perform customizations to webpack config
 			// Important: return the modified config
