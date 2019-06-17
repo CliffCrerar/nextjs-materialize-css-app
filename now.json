@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "alias": "nextjs-material-css-app",
+    "alias": "mnext",
     "name": "nextjs-material-css-app",
     "builds": [ {
         "src": "next.config.js",

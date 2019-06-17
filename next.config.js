@@ -9,7 +9,8 @@
  */
 
 // Declarations
-require( "./config" );
+const nodePath = require( "./config" );
+
 const withSourceMaps = require( "@zeit/next-source-maps" );
 const withSass = require( "@zeit/next-sass" );
 const withPlugins = require( "next-compose-plugins" );
@@ -32,9 +33,9 @@ var plugins = [
 // Configuration
 const NextAppConfig = {
 	distDir,
-	target: 'server',
+	target: 'serverless',
 	env: {
-
+		temp_secret: 'temp'
 	},
 	pageExtensions: [ 'jsx', 'js' ],
 	webpack: ( config, {buildId, dev, isServer, defaultLoaders, webpack} ) => {

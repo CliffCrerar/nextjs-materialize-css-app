@@ -26,7 +26,7 @@ const WithLayout = PageComponent => {
 		return (
 			<React.Fragment>
 				<PageHead />
-				<StyleGlobal themeFromCookies={props.theme} />
+				<StyleGlobal />
 				<NavBar />
 				{/*<PageLoader />*/}
 				<PageComponent />

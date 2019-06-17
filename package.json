@@ -7,7 +7,15 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clean": "./bin/clean",
+        "clean-all": "./bin/clean-all",
+        "clean-rundev": "./bin/clean-all-run-dev",
+        "clean-build": "./bin/clean-build",
+        "clean-dev": "./bin/clean",
+        "deploy-test": "./bin/deploy-test",
+        "deploy": "./bin/deploy",
+        "now-build": "next build && next export -o dist"
     },
     "repository": {
         "type": "git",

@@ -28,4 +28,4 @@ function ProjectPaths( rootDir ) {
 	return node_path.join( '' );
 }
 //ut.log( 'NODE_PATH: ', ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() ) );
-process.env.NODE_PATH = ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() )
+return process.env.NODE_PATH = ProjectPaths( path.join( __dirname, '../ ' ).toString().trim() )

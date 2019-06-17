@@ -28,8 +28,9 @@ const PageHead = ( {router} ) => {
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 			<title>Material Next: {thisPath}</title>
 			<link key="favicon" rel="icon" href="static/favicon/favicon.ico" type="image/ico" />
-			<link rel="stylesheet" href="static/lib/css/materialize.css" />
-			<link rel="stylesheet" href="static/lib/css/mnext-rad.css" />
+			<link rel="stylesheet" href="static/style/lib/materialize.css" />
+			<link rel="stylesheet" href="static/style/lib/mnext-rad.css" />
+			<link rel="stylesheet" href="static/style/css/style.css" />
 		</Head>
 	)
 }
