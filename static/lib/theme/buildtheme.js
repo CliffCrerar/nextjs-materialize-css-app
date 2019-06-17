@@ -8,17 +8,16 @@
 //var ch1 = require( 'css-to-json/cssjson' );
 
 /*------------------------*/
-const dev = process.ENV === undefined
+const dev = process.env.NODE_ENV === undefined
 console.log( 'dev: ', dev );
 console.log( 'PROCESS ENV', process.ENV );
 /*------------------------*/
 
 const
-	ut = require( 'util' ),
-	CSSJSON = require( __dirname + '../css-to-json' ),
-	fs = require( 'fs' ),
 	path = require( 'path' ),
-	themeNames = require( './themeNames.js' );
+	ut = require( 'util' ),
+	fs = require( 'fs' ),
+	CSSJSON = require( path.join( __dirname, '../', 'css-to-json' ) );
 
 console.log( __dirname );
 console.log( __filename );
@@ -51,27 +50,12 @@ module.exports = () => {
 	//showLoops && console.log(themesOBJ, process.cwd());
 	return ( async () => {
 		ut.log( '|> THEMES BUILT' );
-		await fs.writeFileSync( __dirname + '/themes.json', JSON.stringify( themesOBJ ) );
-		themeNames(); // write theme names
+		await fs.writeFile( __dirname + '/themes.json', JSON.stringify( themesOBJ ), ( err ) => {
+			ut.log( '|> WRITE OUT THEME NAMES' );
+			if ( err ) throw err;
+			require( './themeNames.js' )(); // write theme names
+		} );
 	} )();
 }
 
 dev && require( './buildtheme' )();
-
-/*
-const
-	fs = require( 'fs' ),
-	path = require( 'path' );
-
-console.log( __dirname );
-
-var filesInHere = fs.readdirSync( __dirname );
-console.log( 'dir: ', filesInHere );
-
-filesInHere.forEach( fileName => {
-	console.log( 'file: ', fileName );
-	console.log( fs.readFileSync( path.join( __dirname, fileName ), 'utf8' ) );
-	const file = fs.readFileSync( path.join( __dirname, fileName ), 'utf8' )
-	//file.split( '{' ).split( '}' );
-	console.log( file );
-} );*/
