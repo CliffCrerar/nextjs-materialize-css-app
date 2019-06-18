@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2019-06-17 21:28:17
- * Last modified  : 2019-06-18 01:57:54
+ * Last modified  : 2019-06-18 02:37:30
  */
 import WithLayout from 'Layout'
 import css from 'styled-jsx/css';
@@ -16,7 +16,7 @@ const style = css`
 	.test-page-container{
 		height: var(--vph);
 	}
-	.testclass{
+	.testClass{
 		color: red;
 	}
 `
@@ -26,9 +26,7 @@ const MdTest = () => {
 		<React.Fragment>
 			<style jsx>{style}</style>
 			<div className="container test-page-container mt-5">
-
 				<MnextMarkdown source={thisReadme} />
-
 			</div>
 		</React.Fragment>
 	)
