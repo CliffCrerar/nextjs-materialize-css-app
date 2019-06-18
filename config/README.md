@@ -1,6 +1,7 @@
 ## ENVIRONMENT and PLUGINS { class="mnext-fl"}
 
    #### Directory: `<root>/config`
+
 >   This is the environment and plugins config directory:
 >
 >   ##### Default configurations
@@ -19,6 +20,3 @@ const thisVar = thatVar;
 ```
 
 ### Centered text test { class="text-center mnext-fl"}
-
-
-

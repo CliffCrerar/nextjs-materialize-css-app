@@ -45,7 +45,9 @@ The project comes with 3 standard themes:
    1. Explain services
    1. Split and refactor features page
    1. Explain Changing fonts
-   1. Explain Markdown in react 
+   1. Explain Markdown in react
+   1. Nextjs links to docs, links to other docs where required in JS files
+   1. Explain plugin and environment configuration.
 
 ---
 
