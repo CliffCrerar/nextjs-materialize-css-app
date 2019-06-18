@@ -1,4 +1,4 @@
-## ENVIRONMENT and PLUGINS
+## ENVIRONMENT and PLUGINS { class="mnext-fl"}
 
    #### Directory: `<root>/config`
 >   This is the environment and plugins config directory:
@@ -11,7 +11,6 @@
 >
 > ***This is the two main categories the configuration is split up into***
 
-
 ```javascript
 
 // TODO
@@ -19,8 +18,7 @@ const thisVar = thatVar;
 
 ```
 
-# Centered text test
+### Centered text test { class="text-center mnext-fl"}
 
 
-<div className="text-centered w-100"> test html element 1</div>
 
