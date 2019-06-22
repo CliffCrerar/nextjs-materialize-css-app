@@ -1,4 +1,5 @@
-## Materialize {class="mnext mt-5 text-center"}
+<!-- ## Materialize {class="mnext mt-5 text-center"} -->
+## The Style {class="mnext"}
 
 * ![Materialize Icon](http://localhost:3000/static/img/materialize.png){class="img-fluid"}
 

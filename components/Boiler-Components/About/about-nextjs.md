@@ -1,7 +1,8 @@
 
 ---
 
-## Framework for React
+<!-- ## Framework for React -->
+## The Platform {class="mnext"}
 
 * {class="d-flex"}
    | Why Next.js              | ***The world’s leading companies use and love Next.js***                                                                                  |

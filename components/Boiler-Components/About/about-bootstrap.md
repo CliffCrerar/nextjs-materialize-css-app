@@ -1,4 +1,4 @@
-# Bootstrap 4 Utilities {class="mnext mt-5"}
+# The Legend Lives On {class="mnext mt-5"}
 
 ### Why Bootstrap?
 
@@ -12,4 +12,4 @@ What had made Bootstrap 4 so special was its utilities classes, those classes th
 
 #### The best part
 
-All parts of the library that gave it it's signature looked has been stripped away and what we sowed in here are all the parts that can never go out of fashion
+All parts of the library that gave it it's signature looked has been stripped away and what we sowed in here are all the parts that can never go out of fashion. Aside from the great utilities this library provided the most oustanding feature is the fact that all of these tools this great library provides makes the this app almost completely mobile responsive right out of ht box. This is where the legend lives on. 

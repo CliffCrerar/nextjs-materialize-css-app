@@ -8,3 +8,8 @@ The final piece of the puzzle is brought in by the materialize-css library, A si
 
 In this quick launch application you will find all you need to code in your favorite framework, control the structure completely, you will be able to scaffold great apps in the least amount of time while still being able to express yourself creatively.
 {class="text-justify}
+
+---
+#### Important Notice:
+
+> The aim for this part of the document is to paint a picture of why we chose to bring these meshed up these libraries together. This section does not go into detail about what exactly is in and what is out. Please find the details of this in the features section. {class="text-justify"}
