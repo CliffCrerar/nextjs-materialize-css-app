@@ -8,6 +8,7 @@
  * Last modified  : 2019-06-15 15:14:54
  */
 import convertColor from 'color-convert';
+import css from 'styled-jsx/css'
 
 const FloatingButtonStyle = ( {name, color1, color2, spread} ) => {
 	var linGrad = `linear-gradient(
@@ -78,7 +79,7 @@ function SetThemeSelection( {themeNames, themes, selectedTheme, updateThemeSelec
 		);
 	} );
 	return (
-		<ul onClick={onThemeAnchorClick}>
+		<ul onClick={onThemeAnchorClick} style={{display: 'block'}}>
 			<FloatingButtonSelectStyle selectedTheme={selectedTheme} />
 			{SelectionOptions}
 		</ul>

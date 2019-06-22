@@ -85,7 +85,7 @@ function HelloWorld() {
 			</div>
 
 			<h4 className="text-center mt-3 mb-3">
-				Next.js <span className="text-divider">|</span> Bootstrap 4 utility <span className="text-divider">|</span> React <span className="text-divider">|</span> Materialize CSS
+				Next.js <span className="text-divider">|</span> Bootstrap 4 utility <span className="text-divider">|</span> React <span className="text-divider">|</span> Materialize
 			</h4>
 
 
