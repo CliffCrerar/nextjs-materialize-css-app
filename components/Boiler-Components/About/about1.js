@@ -1,4 +1,4 @@
-import react from '../../../pages/react';
+import react from '../../../_stash/react';
 
 /**
  * About part 2
@@ -12,7 +12,12 @@ export default props =>
 	<React.Fragment>
 		{( () => {
 			const
-				classes = [ 'text-default-primary', 'text-dark-primary', 'text-accent', 'text-light-primary' ],
+				classes = [
+					'text-default-primary',
+					'text-dark-primary',
+					'text-accent',
+					'text-light-primary'
+				],
 				list = [ 'Rapid', 'Modern', 'Simplistic', 'Creative' ]
 			return (
 				<ul className="d-flex flex-row flex-wrap justify-content-around">

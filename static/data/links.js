@@ -5,18 +5,18 @@ module.exports = [
 		as: "index",
 		title: 'Material Next'
 	},
-	{
-		href: '/react',
-		caption: 'React',
-		as: "react",
-		title: 'React'
-	},
-	{
-		href: './materialize',
-		caption: 'Materialize-CSS',
-		title: 'Materialize CSS',
-		as: "materialize"
-	},
+	// {
+	//  href: '/react',
+	//  caption: 'React',
+	//  as: "react",
+	//  title: 'React'
+	// },
+	// {
+	//  href: './materialize',
+	//  caption: 'Materialize-CSS',
+	//  title: 'Materialize CSS',
+	//  as: "materialize"
+	// },
 	{
 		href: '/about',
 		caption: 'About',

@@ -45,7 +45,6 @@ function HelloWorld() {
 						/>
 					</a>
 				</div>
-
 				<div className="w-25 p-2">
 					<a href="https://getbootstrap.com/docs/4.3/utilities/borders/">
 						<div className="d-flex flex-column align-items-center">
@@ -57,7 +56,6 @@ function HelloWorld() {
 						</div>
 					</a>
 				</div>
-
 				<div className="w-25 p-2">
 					<a href="https://getbootstrap.com/docs/4.3/utilities/borders/">
 						<div className="d-flex flex-column align-items-center">
@@ -69,7 +67,6 @@ function HelloWorld() {
 						</div>
 					</a>
 				</div>
-
 				<div className="w-25 p-2">
 					<a href="https://getbootstrap.com/docs/4.3/utilities/borders/">
 						<div className="d-flex flex-column align-items-center">
@@ -81,17 +78,11 @@ function HelloWorld() {
 						</div>
 					</a>
 				</div>
-
 			</div>
-
 			<h4 className="text-center mt-3 mb-3">
 				Next.js <span className="text-divider">|</span> Bootstrap 4 utility <span className="text-divider">|</span> React <span className="text-divider">|</span> Materialize
 			</h4>
-
-
-
 			<p className="text-center">with</p>
-
 			<div className="markdown-heading  w-100 text-center">
 				<img className="img-fluid" src="static/img/markdown-fp-small.png" alt="Markdown" />
 				<h4 className="mx-2">Markdown</h4>
