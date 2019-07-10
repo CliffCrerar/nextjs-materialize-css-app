@@ -2,7 +2,7 @@
 import {aboutData} from 'static/data';
 //import ReactMarkdown from 'react-markdown';
 import aboutPart1 from './about0.md';
-import AboutPart2 from './about1';
+import AboutPart2 from './about1.jsx';
 import aboutPart3 from './about2.md';
 import aboutPartNext from './about-nextjs.md';
 import aboutReact from './about-react.md';
@@ -31,7 +31,7 @@ const About = () => (
 
 		<AboutPart2 />
 
-		<MnextMarkdown source={aboutPart3} />
+		{/* <MnextMarkdown source={aboutPart3} /> */}
 
 		<MnextMarkdown source={aboutPartNext} />
 
@@ -39,11 +39,11 @@ const About = () => (
 
 		<MnextMarkdown source={aboutMaterialize} />
 
-		<div classNAme="clearfix">
+		<div className="clearfix">
 			<img src="static/img/bootstrap.png" alt="bootstrap-image" className="float-right" />
-			<p>
+			<div>
 				<MnextMarkdown source={aboutBootstrap} />
-			</p>
+			</div>
 		</div>
 
 		<MnextMarkdown source={aboutMarkdown} />

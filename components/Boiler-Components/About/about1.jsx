@@ -8,7 +8,7 @@ import react from '../../../_stash/react';
  */
 
 
-export default props =>
+export default props => (
 	<React.Fragment>
 		{( () => {
 			const
@@ -18,11 +18,12 @@ export default props =>
 					'text-accent',
 					'text-light-primary'
 				],
-				list = [ 'Rapid', 'Modern', 'Simplistic', 'Creative' ]
+				list = ['Rapid', 'Modern', 'Simplistic', 'Creative']
 			return (
 				<ul className="d-flex flex-row flex-wrap justify-content-around">
-					{list.map( ( li, i ) => <li key={'abt-li-' + i}><h3 className={classes[ i ]}>{li}</h3></li> )}
+					{list.map( ( li, i ) => <li key={'abt-li-' + i}><h3 className={classes[i]}>{li}</h3></li> )}
 				</ul> )
 		} )()}
 	</React.Fragment>
+)
 

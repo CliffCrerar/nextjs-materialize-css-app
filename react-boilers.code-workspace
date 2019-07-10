@@ -4,6 +4,9 @@
 			"name": "Next.JS Materialize CSS App",
 			"path": "."
 		},
+		{
+			"path": "/Users/cliffordcrerar/SERVERS"
+		}
 	],
 	"settings": {
 		"files.exclude": {

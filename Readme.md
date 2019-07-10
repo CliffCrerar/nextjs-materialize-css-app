@@ -48,6 +48,13 @@ The project comes with 3 standard themes:
    1. Explain Markdown in react
    1. Nextjs links to docs, links to other docs where required in JS files
    1. Explain plugin and environment configuration.
+   1. Hookup blank style files style.css and style.scss
+   1. Fix navbar react component name 'BavBarBrand'
+   1. Remove MDX plugin
+   1. Explain creating new themes
+   1. Implement mailing list
+   1. Implement hotkeys
+   1. Explain layouts
 
 ---
 
@@ -80,14 +87,6 @@ For development it is set to the `Next.js` default standard `.next` directory. O
 If you change these default settings remember to also update these in the `.gitignore` if you are planning on deploying to `Zeit`.
 
 TODO ## Configuring the node path
-
----
-
-#### Layout TODO
-
-You can configure the default layout by manipulating the code inside the `components/layout` directories of the project.
-
-Create new themes by placing `.css` files creates with [material design pallete](https://www.materialpalette.com/) 
 
 ---
 

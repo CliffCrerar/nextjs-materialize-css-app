@@ -34,5 +34,10 @@
 		"unmount",
 		"will",
 		"willmount"
-	]
+	],
+	"eslint.enable": true,
+	"markdown.preview.breaks": false,
+	"markdown.preview.doubleClickToSwitchToEditor": false,
+	"markdown.extension.list.indentationSize": "inherit",
+	"mdx-preview.preview.useVscodeMarkdownStyles": false
 }
