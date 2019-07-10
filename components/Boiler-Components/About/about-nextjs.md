@@ -1,6 +1,8 @@
 
+---
 
 ## The Platform {class="mnext"}
+
 
 ![img1](https://mat-next.c1i44.now.sh/nextjs/nextsmall.png)
 

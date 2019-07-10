@@ -1,4 +1,4 @@
-# The Legend Lives On {class="mnext mt-5"}
+## The Legend Lives On {class="mnext mt-5"}
 
 ### Why Bootstrap?
 

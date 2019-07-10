@@ -4,7 +4,7 @@ import BootstrapUtilities from './bootstrap-utilities';
 const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
 	const colorBlocks = arr.map( ( sVar, i ) => {
 		// console.log( "sVar: ", sVar );
-		const thisStyleVar = sVar[ 0 ].replace( /-color/, "" );
+		const thisStyleVar = sVar[0].replace( /-color/, "" );
 		const textMutate = [
 			"default-primary",
 			"dark-primary",
@@ -14,7 +14,7 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
 		const classesColorDesc = textMutate.includes( thisStyleVar )
 			? "text-light"
 			: "";
-		const classesColorCode = [ classesColorDesc, "font-weight-bolder" ].join( " " );
+		const classesColorCode = [classesColorDesc, "font-weight-bolder"].join( " " );
 		return (
 			<div
 				key={"cb-" + i}
@@ -22,7 +22,7 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
 				style={{background: `var(--${thisStyleVar})`}}
 			>
 				<div className={classesColorDesc}>{thisStyleVar}</div>
-				<div className={classesColorCode}>{sVar[ 1 ]}</div>
+				<div className={classesColorCode}>{sVar[1]}</div>
 			</div>
 		);
 	} );
@@ -52,7 +52,7 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
             backgrounds and this can be achieved by either prefixing{" "}
 						<code className="bg-light-primary round-1">text-</code> ,or by
             prefixing <code className="bg-light-primary round-1">bg-</code> to
-																																																																																																						the names in the color blocks seen above.
+																																																																																																																		the names in the color blocks seen above.
           </p>
 					<p>Below please see the available options:</p>
 					<div className="d-flex flex-row">
@@ -61,7 +61,7 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
 							<ul>
 								{( () => {
 									return arr.map( ( item, i ) => {
-										const className = "text-" + item[ 0 ].replace( "-color", "" );
+										const className = "text-" + item[0].replace( "-color", "" );
 										return (
 											<li key={"text-class-" + i} className="p-1">
 												<code className="bg-light-primary round-1 p-1">
@@ -78,7 +78,7 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
 							<ul>
 								{( () => {
 									return arr.map( ( item, i ) => {
-										const className = "bg-" + item[ 0 ].replace( "-color", "" );
+										const className = "bg-" + item[0].replace( "-color", "" );
 										return (
 											<li key={"bg-class-" + i} className="p-1">
 												<code className="bg-light-primary round-1 p-1">
@@ -120,28 +120,24 @@ const ColorBlocks = ( arr, themeName, currentTheme, theme ) => {
 							New color schemes can be created by visiting{" "}
 							<a href="https://www.materialpalette.com/" target="_blank">
 								Material Palette
-              </a>{" "}
+              				</a>{" "}
 							from there you can select a new color scheme and download it as a
 							css file.
-            </p>
+            			</p>
 						<p>
 							Once the css file produces by{" "}
 							<a href="https://www.materialpalette.com/" target="_blank">
 								Material Palette
-              </a>{" "}
+              				</a>{" "}
 							has been received copy it to{" "}
 							<code className="bg-light-primary round-1 p-1">
 								{"static/lib/theme/colors"}
 							</code>
 							next time the app is build it will install the new theme and it
 							will appear as a selectable theme on the floating theme button.
-            </p>
+            			</p>
 						{/* <iframe src="https://www.materialpalette.com/"></iframe> */}
 					</div>
-
-
-
-					<BootstrapUtilities />
 					<h4 className="text-accent mt-3 mb-2 ">Additional CSS Classes</h4>
 					<AdditionalClasses />
 					<Helpers />

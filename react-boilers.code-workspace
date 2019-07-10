@@ -60,6 +60,10 @@
 		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
 		"git.ignoreLimitWarning": true,
 		"editor.defaultFormatter": "EditorConfig.EditorConfig",
-		"favorites.sortOrder": "DESC"
+		"favorites.sortOrder": "DESC",
+		"markdownFormatter.enable": false,
+		"[javascriptreact]": {
+			"editor.defaultFormatter": "vscode.typescript-language-features"
+		}
 	}
 }

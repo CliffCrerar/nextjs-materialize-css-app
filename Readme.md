@@ -1,8 +1,12 @@
+
+
 ## MATERIAL NEXT (coming soon)
 
-### Next.js MaterializeCSS
+A platform from which to strap great looking UI web apps using Nextjs, Material-CSS, Markdown and bootstrap 4 util classes to reduce the amount of CSS a developer has to write.
 
-#### with Bootstrap4 utilities starter app
+With a build in dynamic theming mechanism build your app but only decide on the best color scheme, while you are developing test out different color schemes. 
+
+Also build the color schemes to be dynamic at run time.
 
 ---
 
@@ -60,7 +64,7 @@ The project comes with 3 standard themes:
 
 ##### HOW TO RUN
 
-Create directory where you want to clone;
+Create directory where you want to clone; 
 
 Clone this URL: https://github.com/CliffCrerar/nextjs-materialize-css-app.git
 
@@ -74,7 +78,7 @@ Run `npm run devSite` builds the dev app in a new or existing `.next` directory.
 
 To create a production build run the following commands:
 
-`npm run build` creates as dist directory with the production version. (_see below section on how to configure._)
+ `npm run build` creates as dist directory with the production version. (_see below section on how to configure._)
 
 ---
 
@@ -82,11 +86,13 @@ To create a production build run the following commands:
 
 Look inside the `next.config.js` for the 2 variables `productionBuildDirectory` and `developmentBuildDirectory` these are as their names suggest, the settings for the directories where the app will be built. 
 
-For development it is set to the `Next.js` default standard `.next` directory. Out of the box the app will create a `dist` directory on the project root when you run `npm run build`. 
+For development it is set to the `Next.js` default standard `.next` directory. Out of the box the app will create a `dist` directory on the project root when you run `npm run build` . 
 
-If you change these default settings remember to also update these in the `.gitignore` if you are planning on deploying to `Zeit`.
+If you change these default settings remember to also update these in the `.gitignore` if you are planning on deploying to `Zeit` .
 
-TODO ## Configuring the node path
+TODO 
+
+## Configuring the node path
 
 ---
 
@@ -113,9 +119,9 @@ The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.

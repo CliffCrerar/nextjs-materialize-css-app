@@ -31,7 +31,7 @@ const About = () => (
 
 		<AboutPart2 />
 
-		{/* <MnextMarkdown source={aboutPart3} /> */}
+		<MnextMarkdown source={aboutPart3} />
 
 		<MnextMarkdown source={aboutPartNext} />
 
