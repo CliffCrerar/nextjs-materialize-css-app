@@ -11,7 +11,7 @@
 require('./static/lib/theme/buildtheme.js');
 // Declarations
 const
-    target = "server",
+    target = "serverless",
     withPlugins = require("next-compose-plugins"),
     { plugins, nodePath } = require('./config'),
     //{withMdx} = require( './config' ),
