@@ -1,11 +1,11 @@
-import StyleTheme from './Layout/style/StyleTheme.jsx'
-import StyleGlobal from './Layout/style/StyleIndex.jsx'
-import PageHead from './Layout/head/index.jsx'
-import NavBar from './Layout/navbar/index.jsx'
-import PageLoader from './Layout/page-loader/index.jsx'
-import ActionButton from './Layout/actionButton/index.jsx'
-import Scripts from './Layout/scripts/index.jsx'
-import Footer from './Layout/footer/index.jsx'
+import StyleTheme from './Layout/style/StyleTheme'
+import StyleGlobal from './Layout/style/StyleIndex'
+import PageHead from './Layout/head/index'
+import NavBar from './Layout/navbar/index'
+import PageLoader from './Layout/page-loader/index'
+import ActionButton from './Layout/actionButton/index'
+import Scripts from './Layout/scripts/index'
+import Footer from './Layout/footer/index'
 
 export {
     PageLoader,
