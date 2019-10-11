@@ -22,7 +22,7 @@
         "url": "git+https://github.com/CliffCrerar/nextjs-materialize-css-app.git"
     },
     "author": "Cliff Crerar",
-    "license": "GPL-3.0-or-later",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/CliffCrerar/nextjs-materialize-css-app/issues"
     },
