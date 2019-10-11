@@ -40,7 +40,6 @@ const PageHead = ( {router} ) => {
 	// 			<script src={gtagScript()}></script>
 	// 		</React.Fragment>
 	// 	)
-
 	// }
 
 	return (
