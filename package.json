@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "dev": "next",
-        "build": "npm dedupe; next build",
+        "build": "next build",
         "start": "next start",
         "test": "echo \"Error: no test specified\" && exit 1",
         "clean": "./bin/clean",
@@ -15,7 +15,7 @@
         "clean-dev": "./bin/clean",
         "deploy-test": "./bin/deploy-test",
         "deploy": "./bin/deploy",
-        "now-build": "npm dedupe; next build"
+        "now-build": "next build"
     },
     "repository": {
         "type": "git",
