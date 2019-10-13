@@ -30,7 +30,7 @@ const BavBarBrand = ( props ) => (
 // Link template
 const NavLink = ( {link} ) => (
 	<li>
-		<Link href={link.href} as={link.as} prefetch>
+		<Link href={link.href} as={link.as}>
 			<a title={link.title}>{link.caption}</a>
 		</Link>
 	</li> )
@@ -49,13 +49,13 @@ function NavBar( props ) {
 				style={styles.navBar}>
 				<div className="navbar-links">
 					<BavBarBrand brand={brand}>
-						<NavLink link={props.links[ 0 ]} />
-						
-						
-						<NavLink link={props.links[ 1 ]} />
-						<NavLink link={props.links[ 2 ]} />
-						<NavLink link={props.links[ 3 ]} />
-						<NavLink link={props.links[ 4 ]} />
+						<NavLink link={props.links[0]} />
+
+
+						<NavLink link={props.links[1]} />
+						<NavLink link={props.links[2]} />
+						<NavLink link={props.links[3]} />
+						<NavLink link={props.links[4]} />
 					</BavBarBrand>
 				</div>
 			</nav>

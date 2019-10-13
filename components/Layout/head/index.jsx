@@ -45,7 +45,7 @@ const PageHead = ( {router} ) => {
 	return (
 		<Head>
 			{/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-			<Analytics />
+			{/* <Analytics /> */}
 			<meta charSet="utf-8" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 			<title>Material Next: {thisPath}</title>
