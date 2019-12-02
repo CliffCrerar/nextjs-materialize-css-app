@@ -7,10 +7,10 @@
  */
 import WithLayout from 'Layout'
 
-import { About } from 'components/Boiler-Components'
+import {About} from 'components/Boiler-Components'
 const PageComponent = props => (
-	<main className="container" > { /* <div>{JSON.stringify( Router )}</div> */ }
+	<main className="container">
 		<About />
 	</main>
 )
-export default WithLayout( PageComponent );
+export default WithLayout( PageComponent )
