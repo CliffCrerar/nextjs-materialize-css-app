@@ -8,7 +8,7 @@
 import WithLayout from 'Layout'
 
 import {About} from 'components/Boiler-Components'
-const PageComponent = props => (
+const PageComponent = () => (
 	<main className="container">
 		<About />
 	</main>

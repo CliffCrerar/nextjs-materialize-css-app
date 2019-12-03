@@ -7,7 +7,8 @@
  */
 import WithLayout from 'Layout'
 import {HelloWorld} from "components/Boiler-Components";
-const PageComponent = ( props ) => {
+const PageComponent = ( props ) =>
+{
 	console.log( 'props: ', props );
 	console.log( "Index" );
 	return (

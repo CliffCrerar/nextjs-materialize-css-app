@@ -25,8 +25,6 @@
 		"typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
 		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
 		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
-		"editor.minimap.maxColumn": 140,
-		"editor.wordWrapColumn": 120,
 		"typescript.validate.enable": false,
 		"typescript.referencesCodeLens.enabled": false,
 		"typescript.format.enable": false,
@@ -38,7 +36,6 @@
 		"css.lint.boxModel": "warning",
 		"html.format.indentInnerHtml": true,
 		"html.format.enable": true,
-		"workbench.colorTheme": "Deepdark Material Theme | Full Black Version",
 		"css.trace.server": "messages",
 		"html.format.wrapAttributes": "aligned-multiple",
 		"editor.folding": true,
@@ -60,10 +57,9 @@
 		"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": true,
 		"git.ignoreLimitWarning": true,
 		"editor.defaultFormatter": "EditorConfig.EditorConfig",
-		"favorites.sortOrder": "DESC",
-		"markdownFormatter.enable": false,
 		"[javascriptreact]": {
-			"editor.defaultFormatter": "vscode.typescript-language-features"
-		}
+			"editor.defaultFormatter": "EditorConfig.EditorConfig"
+		},
+		"javascript.validate.enable": false,
 	}
 }

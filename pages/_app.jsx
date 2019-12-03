@@ -1,5 +1,5 @@
 import React from 'react';
-import App, {Container} from 'next/app';
+import App from 'next/app';
 class MaterialNextApp extends App {
 	static async getInitialProps( {Component, ctx} ) {
 		let pageProps = {};
@@ -10,12 +10,10 @@ class MaterialNextApp extends App {
 		return {pageProps};
 	}
 	render() {
-		console.log( '_app' )
+		// console.log( '_app' )
 		const {Component, pageProps} = this.props;
 		return (
-			<Container>
 				<Component {...pageProps} />
-			</Container>
 		);
 	}
 }
