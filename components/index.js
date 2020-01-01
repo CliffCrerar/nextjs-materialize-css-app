@@ -1,5 +1,5 @@
-import StyleTheme from './Layout/style/StyleTheme'
-import StyleGlobal from './Layout/style/StyleIndex'
+import StyleTheme from './Layout/Style/StyleTheme'
+import StyleGlobal from './Layout/Style/StyleIndex'
 import PageHead from './Layout/head/index'
 import NavBar from './Layout/navbar/index'
 import PageLoader from './Layout/page-loader/index'
